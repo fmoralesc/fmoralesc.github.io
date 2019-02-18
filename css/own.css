@@ -1,0 +1,17 @@
+section {
+    padding-top: 2em;
+}
+
+#name {
+    text-align: center;
+}
+
+#short-bio {
+    padding-top: 2em;
+}
+
+#last-updated {
+    font-size: 0.8em;
+    text-align: center;
+}
+
