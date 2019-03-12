@@ -1,3 +1,7 @@
+body {
+    color: #202020;
+}
+
 section {
     padding-top: 2em;
 }
@@ -15,3 +19,6 @@ section {
     text-align: center;
 }
 
+a {
+    color: #0030ff;
+}
