@@ -8,12 +8,11 @@ body {
 	}
 }
 
-
 section {
     padding-top: 2em;
 }
 
-#name {
+#name,#contact {
     text-align: center;
 }
 
