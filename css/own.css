@@ -1,5 +1,6 @@
 body {
     color: #202020;
+    overflow-x: hidden;
 }
 
 @media (win-width:500px) {
