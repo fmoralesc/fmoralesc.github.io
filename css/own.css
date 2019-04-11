@@ -3,6 +3,11 @@ body {
     overflow-x: hidden;
 }
 
+::selection {
+	background: #101010;
+	color: #eeeeee;
+}
+
 @media (win-width:500px) {
 	.container {
 		width: 100%;
