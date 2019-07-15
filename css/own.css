@@ -30,8 +30,22 @@ section {
 	box-shadow: 0px 2px 10px lightgray;
 }
 
+#name {
+    padding-top: 5px;
+}
+
 #name,#contact {
     text-align: center;
+}
+
+#avatar {
+    text-align: center;
+    clip-path:
+}
+
+#avatar img {
+	height: 200px;
+	clip-path: circle(100px at center)
 }
 
 #short-bio {
