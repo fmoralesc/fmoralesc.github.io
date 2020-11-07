@@ -18,6 +18,11 @@ section {
     padding-top: 2em;
 }
 
+nav {
+	text-align: center;
+	margin-top: 1.2em;
+}
+
 #header {
 	padding-top: 0;
 }
@@ -59,4 +64,13 @@ section {
 
 a {
     color: #0030ff;
+}
+
+nav a {
+	font-size: 1.2em;
+	color: #eeeeee;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	text-decoration: underline;
+	text-decoration-style: dashed;
 }
