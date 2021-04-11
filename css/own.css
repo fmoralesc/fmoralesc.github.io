@@ -85,3 +85,23 @@ details {
 	margin-top:0.5em;
 	margin-bottom:0.5em;
 }
+
+.cv p {
+	margin-bottom: 0.5em;
+	line-height: 100%;
+}
+
+.cv h2 {
+	margin-top: 1em;
+}
+
+.cv .data {
+	font-weight: 600;
+}
+
+.cv td {
+	border: none;
+	padding: 0;
+	padding-bottom: 0.2em;
+	line-height: 110%;
+}
