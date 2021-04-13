@@ -86,6 +86,29 @@ details {
 	margin-bottom:0.5em;
 }
 
+.wrapper {
+	display: flex;
+}
+
+.upcoming {
+	order: 2;
+	padding-left: 5%;
+	font-size: 90%;
+	line-height: 1;
+	max-width: 30%;
+	padding-top: 5em;
+}
+
+.upcoming h2 {
+	font-size: 120%;
+	font-weight: 600;
+}
+
+.main {
+	flex: 2 0px;
+}
+
+
 .cv p {
 	margin-bottom: 0.5em;
 	line-height: 110%;
