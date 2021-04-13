@@ -1,0 +1,8 @@
+- ship: &phdship
+  dates: 2017-2021
+  name: Beca Chile para estudios de Doctorado en el Extranjero (Chile Scholarship for Doctoral Studies Abroad)
+  institution: CONICYT/ANID, Chile
+- ship: &maship
+  dates: 2015-2016
+  name: Beca Chile para estudios de Magister en el Extranjero (Chile Scholarship for Master's Studies Abroad)
+  institution: CONICYT/ANID, Chile

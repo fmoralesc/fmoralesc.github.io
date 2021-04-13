@@ -1,532 +1,113 @@
 ---
 layout: default
 title: CV
+articles:
 ---
 
 <section class="cv">
 
-	<h2 >Address</h2>
-	<p>Isabel Riquelme Sur 1769, dpto. 43</p>
-	<p>Maipu, Santiago, RM, Chile</p>
+<h2 style="margin-top: 0;">Address</h2>
+{% for line in site.data.personalia.address %}
+<p>{{line}}</p>
+{% endfor %}
 
-	<h2 >Short biography</h2>
-	<p>I am Doctor in
-	Philosophy (received my degree at KU Leuven). My PhD thesis was on
-	modal epistemology. More specifically, it gives an account of the
-	structure of modal knowledge and of knowledge of so-called agentive
-	modalities and abilities, with the background of knowledge of
-	counterfactuals.</p>
-	<p><span class="data">Area of Specialization</span>: Modal Epistemology</p>
-	<p><span class="data">Areas of Competence</span>:
-	Epistemology (Formal and Mainstream), Metaphysics, Metaphilosophy,
-	Philosophical Logic, Wittgenstein’s philosophy</p>
-	<p><span class="data">Areas
-	of Interest</span>: Aesthetics, Ancient skepticism, Philosophy of
-	Mathematics</p>
-	<h2 >Education</h2>
-	<table width="665" cellpadding="4" cellspacing="0">
-	<tr valign="top">
-		<td width="150pt"><p>2017-2021</p>
-		</td>
-		<td width="550pt" ><p>PhD,
-			KU Leuven, Belgium.</p>
-			<p>Project: <i>The Epistemology of
-			Counterfactuals and Modality.</i></p>
-			<p >Thesis:
-			<i>Agentive Modality and the Structure of Modal Thought.</i></p>
-			<p>Supervisor: Dr. Jan Heylen.</p>
-			<p>Defended 5/1/2021. Examination
-			committee: Grant Ramsey, Lorenz Demey, Sonia Roca-Royes (external,
-			U. Of Stirling).</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="150pt" ><p>2015-2016</p>
-		</td>
-		<td width="550pt" ><p>MPhil,
-			KU Leuven, Leuven, Belgium. 
-			</p>
-			<p>Thesis: <i>A Model of
-			Understanding: An Account of its Structure and Measures</i>. 
-			</p>
-			<p>Supervisor: Dr. Jan Heylen. <i>magna
-			cum laude</i><span >.</span></p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="150pt" ><p>2009-2013</p>
-		</td>
-		<td width="550pt" ><p>Master
-			in Philosophy, with specialization in Epistemology,
-			Universidad
-			de
-			Chile, Chile.</p>
-			<p>Thesis:
-			<span lang="es-CL"><i>El
-			Problema Epistemológico de los Juicios de Posibilidad como
-			Problema Metafilosófico y sobre el Entendimiento</i></span>
-			(eng: The
-			Epistemological Problem of Possibility Judgements as a
-			Metaphilosophical Problem and on Understanding”).</p>
-			<p>Supervisor:
-			Dr. Rodrigo
-			González Fernández.</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="150pt" ><p>2005-2008</p>
-		</td>
-		<td width="550pt" ><p>Bachelor
-			in Philosophy,
-			Universidad
-			de
-			Chile, Chile.</p>
-			<p>Thesis:
-			<span lang="es-CL"><i>Análisis y Ontología</i></span> (eng:
-			“Analysis and Ontology”).</p>
-			<p>Supervisor:
-			Guido Vallejos.</p>
-		</td>
-	</tr>
+<h2 >Short biography</h2>
+<p>{{site.data.personalia.bio}}</p>
+<p><span class="data">Area of Specialization</span> {{ site.data.personalia.aos }}.</p>
+<p><span class="data">Areas of Competence</span>: {{ site.data.personalia.aoc | array_to_sentence_string}}.</p>
+<p><span class="data">Areas of Interest</span>: {{site.data.personalia.aoi | array_to_sentence_string }}.</p>
+
+<h2 >Education</h2>
+<table width="665" cellpadding="4" cellspacing="0">
+{% for degree in site.data.education.degrees %}
+<tr valign="top">
+	<td width="150pt">{{degree.dates}}</td>
+	<td class="degreedesc" width="550pt">
+		<p>{{degree.description}}, {{degree.place}}.<p>
+		{% if degree.project %}<p>Project: <em>{{degree.project}}</em>.</p>{% endif %}
+		<p>Thesis: <em>{{degree.thesis}}</em>.</p>
+		<p>Supervisor: {{degree.supervisor}}.</p>
+		{% if degree.extra %}<p>{{degree.extra}}</p>{%endif%}
+	</td>
+{% endfor %}
 </table>
+
 <h2 >Scholarships</h2>
 <table width="665" cellpadding="4" cellspacing="0">
 	<col width="150pt"/>
 
 	<col width="550pt"/>
 
+	{% for scholarship in site.data.scholarships %}
 	<tr valign="top">
-		<td width="150pt" ><p>2017-2021</p>
+		<td width="150pt" ><p>{{scholarship.dates}}</p>
 		</td>
-		<td width="550pt" ><p><span lang="es-CL">Beca
-			Chile para estudios de Doctorado en el Extranjero</span> (eng:
-			Chile Scholarship for Foreign Doctoral Studies), CONICYT, Chile.</p>
+		<td width="550pt" ><p><span lang="es-CL">{{scholarship.name}}, {{scholarship.institution}}.</p>
 		</td>
 	</tr>
-	<tr valign="top">
-		<td width="150pt" ><p>2015-2016</p>
-		</td>
-		<td width="550pt" ><p><span lang="es-CL">Beca
-			Chile para estudios de Magister en el Extranjero</span> (eng:
-			Chile Scholarship for Foreign Masters Studies), CONICYT, Chile.</p>
-		</td>
-	</tr>
+	{% endfor %}
 </table>
+
 <h2 >Articles</h2>
 <table width="665" cellpadding="4" cellspacing="0">
-	<col width="150pt"/>
-
-	<col width="550pt"/>
-
+	{% for article in site.data.articles %}
 	<tr valign="top">
-		<td width="150pt" ><p>2020</p>
+		<td width="150pt" ><p>{{article.date}}</p>
 		</td>
-		<td width="550pt" ><p>“Game
-			Counterpossibles”, <i>Argumenta. </i><span >6(1),
-			117–133, doi:&nbsp;10.150pt75/2465-2334/202011.mor</span></p>
+		<td width="550pt" ><p>“{{article.title}}", {{article.extra | markdownify | remove: '<p>' | remove: '</p>'}}</p>
 		</td>
 	</tr>
-	<tr valign="top">
-		<td width="150pt" ><p>2020</p>
-		</td>
-		<td width="550pt" ><p>“Epistemic
-			Projects, Indispensability and the Structure of Modal Thought”,
-			<i>Res Philosophica,</i><span > 97(4),
-			611–638, doi:&nbsp;10.11612/resphil.1946</span></p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="150pt" ><p>2019</p>
-		</td>
-		<td width="550pt" ><p>“Mistakes
-			as Revealing and as Manifestations of Competence”, <i>Synthese</i><span >,
-			doi:&nbsp;</span>10.1007/s11229-019-02281-y</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="150pt" ><p>2018</p>
-		</td>
-		<td width="550pt" ><p>“What
-			is the Locus of Abilities?”, <i>Rivista Italiana di Filosofia
-			del Linguaggio, </i><span >Special issue
-			on “Wittgenstein: language, practical knowledge and embodiment”
-			(guest editor: Annalisa Coliva), 12(2), 19-3</span><span >0</span><span >,
-			</span><span >doi:&nbsp;10.4396/20180201</span></p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="150pt" ><p>2018</p>
-		</td>
-		<td width="550pt" ><p>“On
-			the Question of the Indispensability of Modal Thought”, in
-			<i>Proceedings of the IX Conference of the Spanish Society of
-			Logic, Methodology and Philosophy of Science, </i><span >ISBN:
-			978-84-09-06054-2</span></p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="150pt" ><p>2015</p>
-		</td>
-		<td width="550pt" ><p>“Posibilidades
-			más allá de los fenómenos” (eng: “Possibilities
-			beyond phenomena”) in <i>El pensamiento de
-			Kant en la actualidad - Comunicaciones del I Congreso
-			Internacional Kant y el Criticismo: pasado, presente, ¿futuro?</i>
-			(eds. Daniela Alegría, Paula Órdenes), Editora FI, Porto Alegre.</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="150pt" ><p>2011</p>
-		</td>
-		<td width="550pt" ><p>“La malla conceptual de sentido común
-			sobre la conciencia” (eng: “The common sense conceptual network
-			about consciousness”). <i>Anuario de Postgrado 2011</i>,
-			Facultad de Filosofía y Humanidades,
-			Universidad de Chile.</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="150pt" ><p>2009</p>
-		</td>
-		<td width="550pt" ><p>“Sobre
-			posibilidades contingentes” (eng: “On
-			contingent possibilities”), in <i>Metafísica:
-			cinco ensayos de Filosofía Analítica</i>, Publicaciones
-			Especiales del Departamento de Filosofía,
-			Universidad de Chile.</p>
-		</td>
-	</tr>
+	{% endfor %}
 </table>
 <h2 >Talks</h2>
 <table width="665" cellpadding="4" cellspacing="0" >
-	<col width="140"/>
-
-	<col width="509"/>
-
+	{% for talk in site.data.talks %}
 	<tr valign="top">
-		<td width="140" ><p>2020,
-			November</p>
+		<td width="150pt" ><p>{{talk.year}}{% if talk.date %}, {{talk.date}}{% endif %}</p>
 		</td>
-		<td width="509" ><p>“Counterpossibles
-			in games and Subject Matters for Counterpossibles”, CLPS
-			Seminar, Leuven, Belgium.</p>
+		<td width="550pt" ><p>"{{talk.title}}", {{talk.venue}}</p>
 		</td>
 	</tr>
-	<tr valign="top">
-		<td width="140" ><p>2020,
-			August</p>
-		</td>
-		<td width="509" ><p>“Subject
-			Matters for Counterpossibles ” <i>ECAP 10, </i>Utrecht,
-			Netherlands (online).</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="140" ><p>2019,
-			August</p>
-		</td>
-		<td width="509" ><p>“Imagined,
-			supposed and impossible ways”
-			+ “Counterfactual
-			knowability, once again” (with Jan Heylen),
-			<em>XX Jornadas Rolando
-				Chuaqui Kettlun</em>, August
-			27-30 2019,
-			Santiago, Chile. 
-			</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="140" ><p>2019,
-			July</p>
-		</td>
-		<td width="509" ><p>“What
-			about the bees? Generality and holism in geometry and modality”,
-			Open Session of the <em>Joint Session</em>, July 19-21 2019,
-			Durham.</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="140" ><p><br/>
-
-			</p>
-		</td>
-		<td width="509" ><p>“Musical
-			attentiveness’ modal aspect”, <i>The 7th biennial conference
-			of the Music and Philosophy Study Group</i>, Themed Session: A
-			Musical Matter of Mind, July 11–12 2019, King’s College,
-			London.</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="140" ><p>2019,
-			May</p>
-		</td>
-		<td width="509" ><p>&quot;Modality
-			and circularity&quot;, <em>Modal Metaphysics: Issues on the
-			(Im)possible VII</em>, May 30-31, Bratislava.</p>
-			<p>Also acted as commentator for
-			Nathan Wildman’s (TiLPS) “Necessity by Accident”.</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="140" ><p><br/>
-
-			</p>
-		</td>
-		<td width="509" ><p>“Imagined
-			and supposed ways”, <em>Learning from Imagination</em>, May
-			23-24, Leeds.</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="140" ><p>2018,
-			November</p>
-		</td>
-		<td width="509" ><p>“On
-			the question of the indispensability of modal thought”, <i>IX
-			Conference of the Spanish Society for Logic, Methodology and
-			Philosophy of Science</i>, Madrid, Spain.</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="140" ><p>2018,
-			October</p>
-		</td>
-		<td width="509" ><p>“Accounting
-			for the structure of modal knowledge”, <i>CLPS Seminar </i>(doctoral
-			presentation), Leuven, Belgium.</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="140" ><p>2018,
-			September</p>
-		</td>
-		<td width="509" ><p>“On
-			the global embedding problem for modal expressivism”, <i>Salzburg
-			Conference for Young Analytic Philosophy 2018</i>, Salzburg,
-			Austria.</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="140" ><p>2018,
-			June</p>
-		</td>
-		<td width="509" ><p>“(Non)
-			assertion and modality: from Pyrrho to some contemporary debates”,
-			<i>CLPS-DWMC Symposium</i>, Leuven, Belgium.</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="140" ><p>2018,
-			January</p>
-		</td>
-		<td width="509" ><p>“On
-			the indispensability of modal thought”, <i>First Leuven-Paris
-			Analytic Philosophy Workshop: Epistemology</i>, Leuven, Belgium.</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="140" ><p>2017,
-			September</p>
-		</td>
-		<td width="509" ><p>“Boundaries
-			for Williamsonian epistemologies of modality”, <i>CLAW-CEFISES
-			Workshop</i>, Leuven, Belgium.</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="140" ><p>2017,
-			July</p>
-		</td>
-		<td width="509" ><p>“Knowing
-			(how I can) and counterfactual success”, <i>Varieties of Knowing
-			How Workshop</i>, University of Duisburg-Essen, Essen, Germany.</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="140" ><p>2017,
-			April</p>
-		</td>
-		<td width="509" ><p>“Knowing
-			what is possible atemporally and at all times”, <i>7th Annual
-			Graduate Student Conference</i>, HIW KU Leuven, Belgium.</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="140" ><p>2016,
-			July</p>
-		</td>
-		<td width="509" ><p>“Attributions
-			of misunderstanding and the context-sensitivity of understanding”,
-			<i>European Epistemology Network Conference </i><i>2016</i>,
-			Paris, France.</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="140" ><p>2016,
-			April</p>
-		</td>
-		<td width="509" ><p>“The
-			structure of understanding and its measures”, <i>6th Annual
-			Graduate Student Conference</i>, HIW KU Leuven, Belgium.</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="140" ><p>2014</p>
-		</td>
-		<td width="509" ><p>“Posibilidades
-			más allá de los fenómenos” (eng: “Possibilities beyond
-			phenomena”), <i>I Congreso Internacional Kant y el Criticismo:
-			Presente, pasado, ¿futuro?</i>, Santiago, Chile.</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="140" ><p>2013</p>
-		</td>
-		<td width="509" ><p>“Experimentos
-			mentales, comprensión y la tesis de la pluralidad lógica”,
-			(eng: “Thought experiments, understanding and the thesis of
-			logical pluralism”) <i>XIV Jornadas Rolando Chuaqui Kettlun</i>,
-			Universidad de Concepción, Chile.</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="140" ><p><br/>
-
-			</p>
-		</td>
-		<td width="509" ><p>“Descartes
-			y la relación entre la concebibilidad y la afirmabilidad de lo
-			posible.” (eng:
-			“Descartes and the link between conceivability and assertablity
-			of what is possible”) <i>III
-			Congreso Nacional de Filosofía</i>,
-			Universidad de Valparaíso, Chile.</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="140" ><p><br/>
-
-			</p>
-		</td>
-		<td width="509" ><p>“Entendimiento
-			y juicios de posibilidad”, (eng:
-			“Understanding and possiblity judgement”) <i>IV
-			Coloquio Lenguaje y Cognición</i>,
-			Universidad de Concepción, Chile.</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="140" ><p>2011</p>
-		</td>
-		<td width="509" ><p>“¿Se
-			apunta a la verdad cuando se afirman juicios de posibilidad?”.
-			(eng: “Do we aim at truth when asserting possibility
-			judgements?”) <i>II</i><i> </i><i>Congreso</i><i> </i><i>Nacional</i><i>
-			</i><i>de</i><i> </i><i>Filosofía</i>, Universidad de Concepción,
-			Concepción, Chile.</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="140" ><p>2011</p>
-		</td>
-		<td width="509" ><p>“Metafilosofías
-			escépticas <i>a</i><i> </i><i>la</i> Wittgenstein y <i>a</i><i>
-			</i><i>la</i> Moore”. (eng: “Skeptical metaphilosophies in the
-			style of Wittgenstein and Moore”) <i>Coloquio</i><i> </i><i>de</i><i>
-			</i><i>Estudiantes</i><i> </i><i>de</i><i> </i><i>Filosofìa</i><i>
-			</i><i>Analítica</i>, Universidad Católica de Valparaiso,
-			Valparaíso, Chile</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="140" ><p>2010</p>
-		</td>
-		<td width="509" ><p>“Sobre
-			cierta resistencia de la imaginación” (eng: “On a certain
-			resistance of imagination”) <i>Congreso</i><i>
-			</i><i>Bicentenario</i>, Universidad de Chile, Santiago, Chile.</p>
-		</td>
-	</tr>
-	<tr valign="top">
-		<td width="140" ><p>2008</p>
-		</td>
-		<td width="509" ><p>“Sobre
-			el fallo de los experimentos mentales” (eng: “On the failure
-			of thought experiments”) <i>I </i><i>Congreso</i><i> </i><i>Nacional</i><i>
-			</i><i>de</i><i> </i><i>Filosofía</i>, Santiago, Chile.</p>
-		</td>
-	</tr>
+	{% endfor %}
 </table>
-<h2 >Miscellaneous Publications</h2>
+
+<h2 >Others</h2>
 <table width="665" cellpadding="4" cellspacing="0">
-	<col width="150pt"/>
-
-	<col width="550pt"/>
-
+	{% assign online = site.data.others | where: "type", "online" %}
+	{% for item in online %}
 	<tr valign="top">
-		<td width="150pt" ><p>2019</p>
+		<td width="150pt" ><p>{{item.date}}</p>
 		</td>
-		<td width="550pt" ><p>“Daydreaming,
-			Philosophy, and the Logics of the Imagination”, at <i>The
-			Junkyard </i>(scholarly blog on
-			the Imagination).
-			<a  href="https://junkyardofthemind.com/blog/2019/12/7/daydreaming-philosophy-and-the-logics-of-the-imagination">https://junkyardofthemind.com/blog/2019/12/7/daydreaming-philosophy-and-the-logics-of-the-imagination</a>
-			</p>
+		<td width="550pt" ><p>“{{item.title}}”, {{item.extra}}. <a href="{{item.url}}">{{item.url}}</a></p>
 		</td>
 	</tr>
+	{% endfor %}
 </table>
+
 <h2 >Editing/Translation</h2>
 <table width="665" cellpadding="4" cellspacing="0">
-	<col width="150pt"/>
-
-	<col width="550pt"/>
-
+	{% assign online = site.data.others | where: "type", "edition" %}
+	{% for item in online %}
 	<tr valign="top">
-		<td width="150pt" ><p>2009</p>
+		<td width="150pt" ><p>{{item.date}}</p>
 		</td>
-		<td width="550pt" ><p>Various
-			Authors, <i>Metafísica:</i><i> </i><i>cinco</i><i> </i><i>ensayos</i><i>
-			</i><i>de</i><i> </i><i>Filosofía</i><i> </i><i>Analítica</i>
-			(eng: <i>Metaphysics: Five Essays of Analytic Philosophy</i>).
-			Publicaciones Especiales del Departamento de Filosofía nº 119,
-			Serie Cursos y Seminarios, Universidad de Chile. Co-edited with
-			Manuel Rodriguez.</p>
+		<td width="550pt" ><p><em>{{item.title}}</em>, {{item.extra}}.</p>
 		</td>
 	</tr>
-	<tr valign="top">
-		<td width="150pt" ><p>2008</p>
-		</td>
-		<td width="550pt" ><p>Various
-			Authors, <i>Experimentación</i><i> </i><i>Mental </i><span >(eng:
-			</span><i>Thought Experimentation</i><span >)</span>
-			Publicaciones especiales del Departamento de Filosofìa nº 118,
-			Documentos del Grupo Cognición y Praxis vol. 40. Co-edited and
-			translated with Rodrigo González.</p>
-		</td>
-	</tr>
+	{% endfor %}
 </table>
+
 <h2>Teaching Experience</h2>
 <table width="665" cellpadding="4" cellspacing="0">
-	<col width="150pt"/>
-
-	<col width="550pt"/>
-
+	{% for course in site.data.teaching %}
 	<tr valign="top">
-		<td width="150pt" ><p>2018-2019</p>
+		<td width="150pt" ><p>{{course.date}}</p>
 		</td>
-		<td width="550pt" ><p>TA
-			Epistemology (Bachelors level) Institute of Philosophy, KU Leuven.</p>
+		<td width="550pt" ><p>{{course.type}} {{course.course}} ({{course.level}} level), {{course.place}}.</p>
 		</td>
 	</tr>
-	<tr valign="top">
-		<td width="150pt" ><p>2019-2020</p>
-		</td>
-		<td width="550pt" ><p>TA
-			Logic (Bachelors level) Institute of Philosophy, KU Leuven.</p>
-		</td>
-	</tr>
+	{% endfor %}
+	<tr valign
 </table>
-	    </section>
 
+</section>

@@ -1,0 +1,29 @@
+degrees:
+   - degree: &phd
+     dates: 2017-2021
+     description: 'PhD'
+     place: 'KU Leuven, Belgium'
+     project: 'The Epistemology of Counterfactuals and Modality'
+     thesis: 'Agentive Modality and the Structure of Modal Thought'
+     supervisor: 'Dr. Jan Heylen'
+     extra: 'Defended 5/1/2021. Examination committee: Grant Ramsey, Lorenz Demey, Sonia Roca-Royes (external, U. Of Stirling).'
+   - degree: &mphil
+     dates: 2015-2016
+     description: 'MPhil'
+     place: 'KU Leuven, Belgium'
+     thesis: 'A Model of Understanding: An Account of its Structure and Measures'
+     supervisor: 'Dr. Jan Heylen'
+   - degree: &ma
+     dates: 2009-2013
+     description: 'Master in Philosophy, with specialization in Epistemology'
+     place: 'Universidad de Chile, Chile'
+     thesis: '<span lang="es-CL">El Problema Epistemológico de los Juicios de Posibilidad como
+     Problema Metafilosófico y sobre el Entendimiento</span> (eng: The Epistemological Problem of Possibility
+     Judgements as a	Metaphilosophical Problem, and On Understanding”)'
+     supervisor: 'Dr. Rodrigo González Fernández'
+   - degree: &ba
+     dates: 2005-2008
+     description: 'Bachelor in Philosophy'
+     place: 'Universidad de Chile, Chile'
+     thesis: '<span lang="es-CL">Análisis y Ontología</span> (eng: Analysis and Ontology”)'
+     supervisor: 'Dr. Guido Vallejos'
