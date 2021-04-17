@@ -15,6 +15,20 @@ body {
 	}
 }
 
+@media print {
+	h2 {
+		page-break-before: auto;
+	}
+
+	nav {
+		display: none;
+	}
+
+	#header-top {
+		box-shadow: none;
+	}
+}
+
 section {
     padding-top: 2em;
 }
