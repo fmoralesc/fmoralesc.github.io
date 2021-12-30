@@ -1,3 +1,8 @@
+- type: 'Profesor de Cátedra (Adjunct)'
+  level: 'Bachelors'
+  course: 'Philosophy of Social Science'
+  place: 'Universidad de Chile - Estudios Internacionales'
+  date: '2021, 2nd semester'
 - type: 'TA'
   level: 'Bachelors'
   course: 'Logic'
