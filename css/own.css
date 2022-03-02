@@ -88,8 +88,10 @@ nav a {
 	color: #eeeeee;
 	padding-left: 0.5em;
 	padding-right: 0.5em;
-	text-decoration: underline;
-	text-decoration-style: dashed;
+}
+
+nav a:hover {
+	color: #7070ee;
 }
 
 details {
