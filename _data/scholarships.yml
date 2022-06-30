@@ -1,6 +1,6 @@
 - ship: &postdoc
   dates: 2022-2025
-  name: Beca de Postdoctorado 2022
+  name: Beca FONDECYT de Postdoctorado 2022
   institution: ANID, Chile
 - ship: &phdship
   dates: 2017-2021
