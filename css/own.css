@@ -16,7 +16,17 @@ body {
 }
 
 @media print {
+	body, p, td {
+		font-family: 'Adobe Caslon Pro';
+		font-size: 12pt;
+	}
+	h1 {
+		font-size: 2em;
+	}
+
 	h2 {
+		font-size: 1.5em;
+		font-weight: 500;
 		page-break-before: auto;
 	}
 
@@ -24,9 +34,18 @@ body {
 		display: none;
 	}
 
-	#header-top {
+	div #web-link {
+		display: block;
+	}
+
+	div #gh-link {
+		display: none;
+	}
+
+	div #header-top {
 		box-shadow: none;
 	}
+
 }
 
 section {
@@ -58,6 +77,10 @@ nav {
 
 #name,#contact {
     text-align: center;
+}
+
+#web-link {
+	display: none;
 }
 
 #avatar {
