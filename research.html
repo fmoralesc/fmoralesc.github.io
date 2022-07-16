@@ -7,10 +7,22 @@ title: Research
 
 <section class="main">
 
-	<section>
+	<section class='first-section'>
 		<h2><small>Postdoctoral Project:</small><br>Saber Cómo: Preguntas, Maneras e Intentos</h2>
 		<p>2022-2025. Universidad de Chile.</p>
 		<p><a href="./assets/postdoc - saber como: preguntas, maneras e intentos - resumen (es).pdf">Summary (spanish) [pdf]</a>
+	</section>
+
+	<section>
+	<h2>Publications</h2>
+
+{% assign main_articles = site.data.articles | where: "selected", true %}
+{% for article in main_articles %}
+<details>
+	<summary>({{article.date}}) "{{article.title}}", {{article.extra | markdownify | remove: "<p>" | remove: "</p>"}}. <a href="{{article.url}}">[url]</a></summary>
+	<div class="abstract">{{article.abstract}}.</div>
+</details>
+{%endfor%}
 	</section>
 
 	<section>
@@ -34,17 +46,6 @@ title: Research
 	</section>
 
 	<section>
-	<h2>Publications</h2>
-
-{% assign main_articles = site.data.articles | where: "selected", true %}
-{% for article in main_articles %}
-<details>
-	<summary>({{article.date}}) "{{article.title}}", {{article.extra | markdownify | remove: "<p>" | remove: "</p>"}}. <a href="{{article.url}}">[url]</a></summary>
-	<div class="abstract">{{article.abstract}}.</div>
-</details>
-{%endfor%}
-	</section>
-
 </section>
 
 </div>

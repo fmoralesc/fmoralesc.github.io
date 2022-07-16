@@ -16,6 +16,10 @@ body {
 }
 
 @media print {
+	body {
+		margin: 10mm;
+	}
+
 	body, p, td {
 		font-family: 'Adobe Caslon Pro';
 		font-size: 12pt;
@@ -32,6 +36,10 @@ body {
 
 	nav {
 		display: none;
+	}
+
+	div #contact a {
+		color: black;
 	}
 
 	div #web-link {
@@ -129,6 +137,13 @@ details {
 
 .wrapper {
 	display: flex;
+}
+
+.main section {
+	padding: 1em;
+}
+
+.first-section {
 }
 
 .upcoming {
