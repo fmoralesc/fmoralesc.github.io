@@ -26,6 +26,18 @@ title: Research
 	</section>
 
 	<section>
+		<h2>Manuscripts</h2>
+		<p>Some odds and ends.</p>
+		{% assign mss = site.data.manuscripts %}
+		{% for ms in mss %}
+		<details>
+			<summary>"{{ms.title}}". <a href="{{ms.url}}">[pdf]</a></summary>
+			<div class="abstract">{{ms.abstract}}.</div>
+		</details>
+		{%endfor%}
+	</section>
+
+	<section>
 		<h2><small>PhD Thesis:</small><br>Agentive Modality and the Structure of Modal Knowledge</h2>
 		<p>2017--2021. KU Leuven.</p>
 		<p>This thesis develops a theory about the structure of modal judgment and
