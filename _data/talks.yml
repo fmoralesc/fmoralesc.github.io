@@ -6,6 +6,7 @@
   year: 2023
   date: May 26
   venue: 'IX Coloquio Lenguaje y Cognición, Santiago, Chile'
+  selected: true
 - title: 'Commentary on Zuzanna Rucinska "Do we perceive or do we imagine in virtual realities?"'
   year: 2023
   date: May 24
@@ -14,6 +15,7 @@
   year: 2022
   date: October 21
   venue: 'CLPS Seminar, HIW, Leuven, Belgium'
+  selected: true
 - title: 'Modalizing Together'
   year: 2022
   date: October 17
