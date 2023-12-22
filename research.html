@@ -19,8 +19,8 @@ title: Research
 {% assign main_articles = site.data.articles | where: "selected", true %}
 {% for article in main_articles %}
 <details>
-	<summary>({{article.date}}) "{{article.title}}", {{article.extra | markdownify | remove: "<p>" | remove: "</p>"}}. <a href="{{article.url}}">[url]</a> <a href="./assets/papers/{{article.local}}">[pdf]</a></summary>
-	<div class="abstract">{{article.abstract}}.</div>
+	<summary>({{article.date}}) "{{article.title}}", {{article.extra | markdownify | remove: "<p>" | remove: "</p>"}} {% if article.url != nil %}<a href="{{article.url}}">[url]</a> {%endif %}{% if article.local != nil %}<a href="./assets/papers/{{article.local}}">[pdf]</a>{% endif %}</summary>
+	<div class="abstract">{{article.abstract}}</div>
 </details>
 {%endfor%}
 	</section>
