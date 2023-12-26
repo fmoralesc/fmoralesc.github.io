@@ -1,9 +1,3 @@
-- title: 'Concepts of Knowability'
-  date: 'forthcoming'
-  abstract: >
-    Many philosophical discussions hinge on the concept of knowability. For example, there is a blooming literature on the so-called paradox of knowability. How to understand this notion, however? In this paper, we examine several approaches to the notion: the naive approach to take knowability as the possibility to know, the counterfactual approach endorsed by Edgington (1985) and Schlöder (2019), approaches based on the notion of a capacity or ability to know (Fara 2010, Humphreys 2011), and finally, approaches that make use of the resources of dynamic epistemic logic (van Benthem 2004, Holliday 2017).
-  extra: '(as co-author with Jan Heylen), *Revista de Humanidades de Valparaiso*'
-  selected: true
 - title: 'Calibrating and Bootstrapping Modal Judgment'
   date: 'forthcoming'
   abstract: > 
@@ -25,6 +19,13 @@
 - title: '¿Es cartesiano el “teatro cartesiano” de Dennett?: Un análisis crítico desde el trialismo y el ens per se'
   date: forthcoming
   extra: '(as co-author with Rodrigo Gonzalez), *Anales del Seminario de Historia de la Filosofia*'
+- title: 'Concepts of Knowability'
+  date: '2023'
+  abstract: >
+    Many philosophical discussions hinge on the concept of knowability. For example, there is a blooming literature on the so-called paradox of knowability. How to understand this notion, however? In this paper, we examine several approaches to the notion: the naive approach to take knowability as the possibility to know, the counterfactual approach endorsed by Edgington (1985) and Schlöder (2019), approaches based on the notion of a capacity or ability to know (Fara 2010, Humphreys 2011), and finally, approaches that make use of the resources of dynamic epistemic logic (van Benthem 2004, Holliday 2017).
+  extra: '(as co-author with Jan Heylen), *Revista de Humanidades de Valparaiso*, 23, 287-308'
+  url: 'https://rhv.uv.cl/index.php/RHV/article/view/4095/3892'
+  selected: true
 - title: 'Transcendental Knowability, Closure, Luminosity and Factivity: reply to Stephenson'
   date: '2023'
   extra: '(as co-author with Jan Heylen). *History of Philosophy and Logical Analysis*, doi:&nbsp;10.30965-26664275-bja10073'
