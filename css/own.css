@@ -54,6 +54,10 @@ body {
 		box-shadow: none;
 	}
 
+	div #pdf-link {
+		display: none;
+	}
+
 }
 
 section {
