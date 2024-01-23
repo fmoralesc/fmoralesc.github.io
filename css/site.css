@@ -1,0 +1,92 @@
+body {
+	margin: 0px;
+	background-color: #f7f3d0;
+}
+
+@media print {
+	#contact, nav {
+		display: none;
+	}
+}
+
+#blocks { 
+	display:flex;
+	flex-direction: row;
+	align-items: flex-start;
+	font-family: "Jost*", sans-serif;
+}
+
+#sidebar {
+	display: flex;
+	flex-direction: column;
+}
+
+#nav-links {
+	display: flex;
+	flex-direction: row;
+	padding: 1em;
+}
+
+nav {
+	font-size: larger;
+}
+
+h1 {
+margin: 0; padding: 0; writing-mode: sideways-lr; font-size: 4rem; font-weight: normal; min-width: 1.5em; color: #505050;
+}
+
+h1 a {
+	text-decoration: none;
+	color: black;
+}
+
+nav a {
+	color: #4d4d4d;
+}
+
+h2 {
+	font-family: 'Jost*', sans-serif;
+	font-weight: normal;
+}
+
+#contact {
+	padding: 5em 2.5em;
+}
+
+#content {
+	width:78ch;
+	hyphens: auto;
+	text-align: justify;
+	padding-left: 1em;
+	font-family: "Adobe Caslon Pro", serif;
+	font-size: 12pt;
+}
+
+details {
+	margin-bottom:0.5em;
+}
+
+details .abstract {
+	font-size: 90%;
+	padding: 1em;
+}
+
+#talk-list {
+	display: flex;
+	flex-direction: column;
+}
+
+.talk {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 0.5em;
+}
+
+.talk-date {
+	width: 20ch;
+	font-size: 90%;
+}
+
+#teaching-list li {
+	margin-bottom: 0.5em;
+}

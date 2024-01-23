@@ -1,11 +1,9 @@
-address: ['Isabel Riquelme Sur 1769, dpto. 43', 'Maipú, Santiago, RM, Chile']
+address: ['Isabel Riquelme Sur 1769, dpto. 43</br>Maipú, Santiago, RM, Chile']
+email: 'ef.em.carbonell@gmail.com'
 bio: |
   I am Doctor in
   Philosophy (received my degree at KU Leuven). My PhD thesis was on
-  modal epistemology. More specifically, it gives an account of the
-  structure of modal knowledge and of knowledge of so-called agentive
-  modalities and abilities, with the background of knowledge of
-  counterfactuals.
+  modal epistemology, and I am currently working on a postdoc project on know-how.
 aos: Modal Epistemology
 aoc: ['Epistemology', 'Metaphysics', 'Metaphilosophy', 'Philosophical Logic']
 aoi: ['Aesthetics', 'Ancient Skepticism', 'Philosophy of Mathematics']

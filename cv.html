@@ -3,113 +3,115 @@ layout: default
 title: CV
 articles:
 ---
+<div class='wrapper'>
+	<section class="cv" style='display: flex; flex-direction: row;'>
 
-<section class="cv">
+		<div style='min-width:78ch'>
+			<h2>Address</h2>
+			{% for line in site.data.personalia.address %}
+			<p>{{line}}</p>
+			<p><a href="mailto:{{site.data.personalia.email}}">{{site.data.personalia.email}}</a></p>
+			{% endfor %}
 
-	<div id='pdf-link' style="width:100%;"><p style="text-align:center"><a href="./assets/felipe_morales_carbonell_cv.pdf">[pdf version]</a></p></div>
+			<h2 >Short biography</h2>
+			<p>{{site.data.personalia.bio}}</p>
+			<p><span class="data">Area of Specialization</span>: {{ site.data.personalia.aos }}.</p>
+			<p><span class="data">Areas of Competence</span>: {{ site.data.personalia.aoc | array_to_sentence_string}}.</p>
+			<p><span class="data">Areas of Interest</span>: {{site.data.personalia.aoi | array_to_sentence_string }}.</p>
 
-<h2 style="margin-top: 0;">Address</h2>
-{% for line in site.data.personalia.address %}
-<p>{{line}}</p>
-{% endfor %}
+			<h2 >Education</h2>
+			<table width="665" cellpadding="4" cellspacing="0">
+				{% for degree in site.data.education.degrees %}
+				<tr valign="top">
+					<td width="150pt">{{degree.dates}}</td>
+					<td class="degreedesc" width="550pt">
+						<p>{{degree.description}}, {{degree.place}}.<p>
+						{% if degree.project %}<p>Project: <em>{{degree.project}}</em>.</p>{% endif %}
+						<p>Thesis: <em>{{degree.thesis}}</em>.</p>
+						<p>Supervisor: {{degree.supervisor}}.</p>
+						{% if degree.extra %}<p>{{degree.extra}}</p>{%endif%}
+					</td>
+					{% endfor %}
+			</table>
 
-<h2 >Short biography</h2>
-<p>{{site.data.personalia.bio}}</p>
-<p><span class="data">Area of Specialization</span> {{ site.data.personalia.aos }}.</p>
-<p><span class="data">Areas of Competence</span>: {{ site.data.personalia.aoc | array_to_sentence_string}}.</p>
-<p><span class="data">Areas of Interest</span>: {{site.data.personalia.aoi | array_to_sentence_string }}.</p>
+			<h2 >Scholarships</h2>
+			<table width="665" cellpadding="4" cellspacing="0">
+				<col width="150pt"/>
 
-<h2 >Education</h2>
-<table width="665" cellpadding="4" cellspacing="0">
-{% for degree in site.data.education.degrees %}
-<tr valign="top">
-	<td width="150pt">{{degree.dates}}</td>
-	<td class="degreedesc" width="550pt">
-		<p>{{degree.description}}, {{degree.place}}.<p>
-		{% if degree.project %}<p>Project: <em>{{degree.project}}</em>.</p>{% endif %}
-		<p>Thesis: <em>{{degree.thesis}}</em>.</p>
-		<p>Supervisor: {{degree.supervisor}}.</p>
-		{% if degree.extra %}<p>{{degree.extra}}</p>{%endif%}
-	</td>
-{% endfor %}
-</table>
+				<col width="550pt"/>
 
-<h2 >Scholarships</h2>
-<table width="665" cellpadding="4" cellspacing="0">
-	<col width="150pt"/>
+				{% for scholarship in site.data.scholarships %}
+				<tr valign="top">
+					<td width="150pt" ><p>{{scholarship.dates}}</p>
+					</td>
+					<td width="550pt" ><p><span lang="es-CL">{{scholarship.name}}, {{scholarship.institution}}.</p>
+					</td>
+				</tr>
+				{% endfor %}
+			</table>
 
-	<col width="550pt"/>
+			<h2 >Articles</h2>
+			<table width="665" cellpadding="4" cellspacing="0">
+				{% for article in site.data.articles %}
+				<tr valign="top">
+					<td width="150pt" ><p>{{article.date}}</p>
+					</td>
+					<td width="550pt" ><p>“{{article.title}}", {{article.extra | markdownify | remove: '<p>' | remove: '</p>'}}</p>
+					</td>
+				</tr>
+				{% endfor %}
+			</table>
+			<h2 >Talks</h2>
+			<table width="665" cellpadding="4" cellspacing="0" >
+				{% for talk in site.data.talks %}
+				<tr valign="top">
+					<td width="150pt" ><p>{{talk.year}}{% if talk.date %}, {{talk.date}}{% endif %}</p>
+					</td>
+				<td width="550pt" ><p>"{{talk.title}}", {{talk.venue}}</p>
+				</td>
+				</tr>
+				{% endfor %}
+			</table>
 
-	{% for scholarship in site.data.scholarships %}
-	<tr valign="top">
-		<td width="150pt" ><p>{{scholarship.dates}}</p>
-		</td>
-		<td width="550pt" ><p><span lang="es-CL">{{scholarship.name}}, {{scholarship.institution}}.</p>
-		</td>
-	</tr>
-	{% endfor %}
-</table>
+			<h2 >Others</h2>
+			<table width="665" cellpadding="4" cellspacing="0">
+				{% assign online = site.data.others | where: "type", "online" %}
+				{% for item in online %}
+				<tr valign="top">
+					<td width="150pt" ><p>{{item.date}}</p>
+					</td>
+					<td width="550pt" ><p>“{{item.title}}”, {{item.extra}}. <a href="{{item.url}}">{{item.url}}</a></p>
+					</td>
+				</tr>
+				{% endfor %}
+			</table>
 
-<h2 >Articles</h2>
-<table width="665" cellpadding="4" cellspacing="0">
-	{% for article in site.data.articles %}
-	<tr valign="top">
-		<td width="150pt" ><p>{{article.date}}</p>
-		</td>
-		<td width="550pt" ><p>“{{article.title}}", {{article.extra | markdownify | remove: '<p>' | remove: '</p>'}}</p>
-		</td>
-	</tr>
-	{% endfor %}
-</table>
-<h2 >Talks</h2>
-<table width="665" cellpadding="4" cellspacing="0" >
-	{% for talk in site.data.talks %}
-	<tr valign="top">
-		<td width="150pt" ><p>{{talk.year}}{% if talk.date %}, {{talk.date}}{% endif %}</p>
-		</td>
-		<td width="550pt" ><p>"{{talk.title}}", {{talk.venue}}</p>
-		</td>
-	</tr>
-	{% endfor %}
-</table>
+			<h2 >Editing/Translation</h2>
+			<table width="665" cellpadding="4" cellspacing="0">
+				{% assign online = site.data.others | where: "type", "edition" %}
+				{% for item in online %}
+				<tr valign="top">
+					<td width="150pt" ><p>{{item.date}}</p>
+					</td>
+					<td width="550pt" ><p><em>{{item.title}}</em>, {{item.extra}}.</p>
+					</td>
+				</tr>
+				{% endfor %}
+			</table>
 
-<h2 >Others</h2>
-<table width="665" cellpadding="4" cellspacing="0">
-	{% assign online = site.data.others | where: "type", "online" %}
-	{% for item in online %}
-	<tr valign="top">
-		<td width="150pt" ><p>{{item.date}}</p>
-		</td>
-		<td width="550pt" ><p>“{{item.title}}”, {{item.extra}}. <a href="{{item.url}}">{{item.url}}</a></p>
-		</td>
-	</tr>
-	{% endfor %}
-</table>
+			<h2>Teaching Experience</h2>
+			<table width="665" cellpadding="4" cellspacing="0">
+				{% for course in site.data.teaching %}
+				<tr valign="top">
+					<td width="150pt" ><p>{{course.date}}</p>
+					</td>
+					<td width="550pt" ><p>{{course.type}} {{course.course}} ({{course.level}} level), {{course.place}}.</p>
+					</td>
+				</tr>
+				{% endfor %}
+				<tr valign
+			</table>
+		</div>
 
-<h2 >Editing/Translation</h2>
-<table width="665" cellpadding="4" cellspacing="0">
-	{% assign online = site.data.others | where: "type", "edition" %}
-	{% for item in online %}
-	<tr valign="top">
-		<td width="150pt" ><p>{{item.date}}</p>
-		</td>
-		<td width="550pt" ><p><em>{{item.title}}</em>, {{item.extra}}.</p>
-		</td>
-	</tr>
-	{% endfor %}
-</table>
-
-<h2>Teaching Experience</h2>
-<table width="665" cellpadding="4" cellspacing="0">
-	{% for course in site.data.teaching %}
-	<tr valign="top">
-		<td width="150pt" ><p>{{course.date}}</p>
-		</td>
-		<td width="550pt" ><p>{{course.type}} {{course.course}} ({{course.level}} level), {{course.place}}.</p>
-		</td>
-	</tr>
-	{% endfor %}
-	<tr valign
-</table>
-
-</section>
+	</section>
+</div>
