@@ -90,3 +90,9 @@ details .abstract {
 #teaching-list li {
 	margin-bottom: 0.5em;
 }
+
+#image-self {
+	position: absolute;
+	bottom: -1;
+	right: -1;
+}
