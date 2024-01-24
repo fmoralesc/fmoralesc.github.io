@@ -20,97 +20,82 @@ articles:
 			<p><span class="data">Areas of Interest</span>: {{site.data.personalia.aoi | array_to_sentence_string }}.</p>
 
 			<h2 >Education</h2>
-			<table width="665" cellpadding="4" cellspacing="0">
+			<div class='dated-list'>
 				{% for degree in site.data.education.degrees %}
-				<tr valign="top">
-					<td width="150pt">{{degree.dates}}</td>
-					<td class="degreedesc" width="550pt">
-						<p>{{degree.description}}, {{degree.place}}.<p>
+				<div class='dated-li'>
+					<div class='dated-li-date'>{{degree.dates}}</div>
+					<div class='dated-li-details'>
+						{{degree.description}}, {{degree.place}}.
 						{% if degree.project %}<p>Project: <em>{{degree.project}}</em>.</p>{% endif %}
 						<p>Thesis: <em>{{degree.thesis}}</em>.</p>
-						<p>Supervisor: {{degree.supervisor}}.</p>
-						{% if degree.extra %}<p>{{degree.extra}}</p>{%endif%}
-					</td>
-					{% endfor %}
-			</table>
+						<p class='li-extra-info'>Supervisor: {{degree.supervisor}}.</br>
+						{% if degree.extra %}{{degree.extra}}{%endif%}</p>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
 
 			<h2 >Scholarships</h2>
-			<table width="665" cellpadding="4" cellspacing="0">
-				<col width="150pt"/>
-
-				<col width="550pt"/>
-
+			<div class='dated-list'>
 				{% for scholarship in site.data.scholarships %}
-				<tr valign="top">
-					<td width="150pt" ><p>{{scholarship.dates}}</p>
-					</td>
-					<td width="550pt" ><p><span lang="es-CL">{{scholarship.name}}, {{scholarship.institution}}.</p>
-					</td>
-				</tr>
+				<div class='dated-li'>
+					<div class='dated-li-date'>{{scholarship.dates}}</div>
+					<div class='dated-li-details'><span lang="es-CL">{{scholarship.name}}, {{scholarship.institution}}.</span></div>
+				</div>
 				{% endfor %}
-			</table>
+			</div>
 
 			<h2 >Articles</h2>
-			<table width="665" cellpadding="4" cellspacing="0">
+			<div class='dated-list'>
 				{% for article in site.data.articles %}
-				<tr valign="top">
-					<td width="150pt" ><p>{{article.date}}</p>
-					</td>
-					<td width="550pt" ><p>“{{article.title}}", {{article.extra | markdownify | remove: '<p>' | remove: '</p>'}}</p>
-					</td>
-				</tr>
+				<div class='dated-li'>
+					<div class='dated-li-date'>{{article.date}}</div>
+					<div class='dated-li-details'>“{{article.title}}", {{article.extra | markdownify | remove: '<p>' | remove: '</p>'}}{% if article.url %}<a href='{{article.url}}'>{{article.url}}{% endif %}</a></div>
+				</div>
 				{% endfor %}
-			</table>
+			</div>
+
 			<h2 >Talks</h2>
-			<table width="665" cellpadding="4" cellspacing="0" >
+			<div class='dated-list'>
 				{% for talk in site.data.talks %}
-				<tr valign="top">
-					<td width="150pt" ><p>{{talk.year}}{% if talk.date %}, {{talk.date}}{% endif %}</p>
-					</td>
-				<td width="550pt" ><p>"{{talk.title}}", {{talk.venue}}</p>
-				</td>
-				</tr>
+				<div class='dated-li'>
+					<div class='dated-li-date'>{{talk.year}}{% if talk.date %}, {{talk.date}}{% endif %}</div>
+					<div class='dated-li-details'>"{{talk.title}}", {{talk.venue}}</div>
+				</div>
 				{% endfor %}
-			</table>
+			</div>
 
 			<h2 >Others</h2>
-			<table width="665" cellpadding="4" cellspacing="0">
+			<div class='dated-list'>
 				{% assign online = site.data.others | where: "type", "online" %}
 				{% for item in online %}
-				<tr valign="top">
-					<td width="150pt" ><p>{{item.date}}</p>
-					</td>
-					<td width="550pt" ><p>“{{item.title}}”, {{item.extra}}. <a href="{{item.url}}">{{item.url}}</a></p>
-					</td>
-				</tr>
+				<div class='dated-li'>
+					<div class='dated-li-date'>{{item.date}}</div>
+					<div class='dated-li-details'>“{{item.title}}”, {{item.extra}}. <a href="{{item.url}}">{{item.url}}</a></div>
+				</div>
 				{% endfor %}
-			</table>
+			</div>
 
 			<h2 >Editing/Translation</h2>
-			<table width="665" cellpadding="4" cellspacing="0">
+			<div class='dated-list'>
 				{% assign online = site.data.others | where: "type", "edition" %}
 				{% for item in online %}
-				<tr valign="top">
-					<td width="150pt" ><p>{{item.date}}</p>
-					</td>
-					<td width="550pt" ><p><em>{{item.title}}</em>, {{item.extra}}.</p>
-					</td>
-				</tr>
+				<div class='dated-li'>
+					<div class='dated-li-date'>{{item.date}}</div>
+					<div class='dated-li-details'><em>{{item.title}}</em>, {{item.extra}}.</div>
+				</div>
 				{% endfor %}
-			</table>
+			</div>
 
 			<h2>Teaching Experience</h2>
-			<table width="665" cellpadding="4" cellspacing="0">
+			<div class='dated-list'>
 				{% for course in site.data.teaching %}
-				<tr valign="top">
-					<td width="150pt" ><p>{{course.date}}</p>
-					</td>
-					<td width="550pt" ><p>{{course.type}} {{course.course}} ({{course.level}} level), {{course.place}}.</p>
-					</td>
-				</tr>
+				<div class='dated-li'>
+					<div class='dated-li-date'>{{course.date}}</div>
+					<div class='dated-li-details'>{{course.type}} {{course.course}} ({{course.level}} level), {{course.place}}.</div>
+				</div>
 				{% endfor %}
-				<tr valign
-			</table>
+			</div>
 		</div>
 
 	</section>

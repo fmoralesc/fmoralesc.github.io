@@ -3,16 +3,16 @@ layout: default
 title: Talks
 ---
 
-<section style='width: 160ch'>
+<section>
 <h2>Talks</h2>
 
 {% assign filtered_talks = site.data.talks | where: "selected", true %}
-<div id='talk-list'>
+<div id='dated-list'>
 	{% for talk in filtered_talks %}
-	<div class='talk'>
-		<div class='talk-date'>{{talk.year}}{% if talk.date %}, {{talk.date}}{% endif %}
+	<div class='dated-li'>
+		<div class='dated-li-date'>{{talk.year}}{% if talk.date %}, {{talk.date}}{% endif %}
 		</div>
-		<div class='talk-details' style="width: 70ch;">"{{talk.title}}", <i>{{talk.venue}}</i>.</div>
+		<div class='dated-li-details'>"{{talk.title}}", <i>{{talk.venue}}</i>.</div>
 	</div>
 	{% endfor %}
 </div>

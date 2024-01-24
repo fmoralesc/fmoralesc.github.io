@@ -31,6 +31,11 @@ nav {
 	font-size: larger;
 }
 
+nav div {
+	margin-bottom: 0.2em;
+}
+
+
 h1 {
 margin: 0; padding: 0; writing-mode: sideways-lr; font-size: 4rem; font-weight: normal; min-width: 1.5em; color: #505050;
 }
@@ -71,19 +76,27 @@ details .abstract {
 	padding: 1em;
 }
 
-#talk-list {
+.dated-list {
 	display: flex;
 	flex-direction: column;
 }
 
-.talk {
+.dated-li {
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 0.5em;
 }
 
-.talk-date {
-	width: 20ch;
+.dated-li-date {
+	width: 25ch;
+	font-size: 90%;
+}
+
+.dated-li-details {
+	width: 70ch;
+}
+
+.li-extra-info {
 	font-size: 90%;
 }
 
