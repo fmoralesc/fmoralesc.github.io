@@ -109,3 +109,8 @@ details .abstract {
 	bottom: -1;
 	right: -1;
 }
+
+.multicol {
+	columns: 3;
+	column-width: 70ch;
+}

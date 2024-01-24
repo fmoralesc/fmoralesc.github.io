@@ -1,0 +1,11 @@
+---
+title: Blog
+layout: default
+---
+
+<div class='multicol'>
+{% for post in site.posts %}
+<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+<div>{{ post.excerpt }}</div>
+{% endfor %}
+</div>
