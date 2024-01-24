@@ -13,16 +13,19 @@ Jackson:
 
 
 
-> It was the night before her release from the black and white prison where Mary had spent her whole life thus far. Tomorrow the door would open, and the coloured light would flood in. Mary was excited; she was nervous. But most of all, Mary was curious. What would it be
-
-like to see red, or green or blue? Mary of course knew a lot about the quantitative structure of colour experience, e.g., how much hue, saturation and brightness each colour had, relative to other colours. And she’d sometimes played a little of game of trying to imagine
-
-colour by ‘filling out’ that structure with the qualities Mary was acquainted with from her sound experience: replacing in her imagination brightness with loudness, hue with pitch, etc. But she knew in her heart of hearts that this abstract exercise could never really provide her with insight into the character of the qualities that fill colour experience.
-
+> It was the night before her release from the black and white prison where 
+> Mary had spent her whole life thus far. Tomorrow the door would open, and the 
+> coloured light would flood in. Mary was excited; she was nervous. But most of 
+> all, Mary was curious. What would it be like to see red, or green or blue? Mary of course knew a lot about the quantitative structure of colour experience, e.g., how much hue, saturation and brightness each colour had, relative to other colours. And she’d sometimes played a little of game of trying to imagine colour by ‘filling out’ that structure with the qualities Mary was acquainted with from her sound experience: replacing in her imagination brightness with loudness, hue with pitch, etc. But she knew in her heart of hearts that this abstract exercise could never really provide her with insight into the character of the qualities that fill colour experience.
 >
-
-> The morning finally came. The door was flung open, and Mary saw, first, a single red rose lying on the threshold. ‘Ah, so that’s what it’s like to see red!’ Mary thought to herself. Finally the curiosity that had burned within her breast for so long was satisfied. And so it went with all the other colours, as she explored the amazing world of colour outside of her black and white room. Whether or not knowledge of colours brought Mary lasting peace of mind is another story; but, for that day at least, Mary’s curiosity was satisfied.
-
+> The morning finally came. The door was flung open, and Mary saw, first, a 
+> single red rose lying on the threshold. ‘Ah, so that’s what it’s like to see 
+> red!’ Mary thought to herself. Finally the curiosity that had burned within 
+> her breast for so long was satisfied. And so it went with all the other 
+> colours, as she explored the amazing world of colour outside of her black and 
+> white room. Whether or not knowledge of colours brought Mary lasting peace of 
+> mind is another story; but, for that day at least, Mary’s curiosity was 
+> satisfied.
 
 
 The idea behind the argument is that moderate physicalist theories cannot account for the curiosity the subject in the knowledge argument scenario ('Mary') could feel before leaving the room, and of the satisfaction of the curiosity they could feel after leaving it and experiencing colors for the first time. Goff raises it as a problem for the ability account response to the knowledge argument, which argues that Mary acquires abilities or know-how rather than propositional knowledge, and for the phenomenal concepts account, which proposes that Mary acquires new concepts on leaving the room. I will focus on the first here, because I think it is the more plausible response-- Goff  disagrees, of course, and thinks that the ability account is a non-starter.
