@@ -37,7 +37,14 @@ nav div {
 
 
 h1 {
-margin: 0; padding: 0; writing-mode: sideways-lr; font-size: 4rem; font-weight: normal; min-width: 1.5em; color: #505050;
+	margin: 0;
+	padding: 0;
+	writing-mode: sideways-lr;
+	font-size: 4rem;
+	font-weight: normal;
+	min-width: 1.5em;
+	color: #505050;
+	white-space: nowrap;
 }
 
 h1 a {
