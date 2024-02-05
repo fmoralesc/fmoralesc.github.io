@@ -60,7 +60,7 @@ articles:
 				{% for talk in site.data.talks %}
 				<div class='dated-li'>
 					<div class='dated-li-date'>{{talk.year}}{% if talk.date %}, {{talk.date}}{% endif %}</div>
-					<div class='dated-li-details'>"{{talk.title}}", {{talk.venue}}</div>
+					<div class='dated-li-details'>"{{talk.title}}", <i>{{talk.venue}}</i></div>
 				</div>
 				{% endfor %}
 			</div>
