@@ -121,3 +121,22 @@ details .abstract {
 	columns: 3;
 	column-width: 70ch;
 }
+
+.wk-wrapper {
+	background: #ffe9aa;
+	padding: 1em;
+	font-family: 'Jost', sans-serif;
+}
+
+.wk-wrapper img {
+	width: 100%;
+}
+
+.wk-wrapper h2 {
+	font-weight: 500;
+}
+
+.wk-afil {
+	font-size: 90%;
+	color: #505050;
+}
