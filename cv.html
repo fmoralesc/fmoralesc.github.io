@@ -64,6 +64,17 @@ articles:
 				</div>
 				{% endfor %}
 			</div>
+			
+			<h2>Organized events</h2>
+			<div class='dated-list'>
+				{% assign events = site.data.others | where: "type", "event" %}
+				{% for event in events %}
+				<div class='dated-li'>
+					<div class='dated-li-date'>{{event.date}}</div>
+					<div class='dated-li-details'><i>{{event.title}}</i>, {{event.venue}}, <a href="{{event.url}}">{{event.url}}</a></div>
+				</div>
+				{% endfor %}
+			</div>
 
 			<h2 >Others</h2>
 			<div class='dated-list'>
