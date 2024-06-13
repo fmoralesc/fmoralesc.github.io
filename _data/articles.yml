@@ -25,6 +25,13 @@
   extra: '*Philosophy and the Mind Sciences*'
   selected: true
   url: https://doi.org/10.33735/phimisci.2024.10257
+- title: 'Transcendental Knowability, Closure, Luminosity and Factivity: reply to Stephenson'
+  date: '2024'
+  extra: '(as co-author with Jan Heylen). *History of Philosophy and Logical Analysis*, 27, 121-140.'
+  abstract: >
+    Stephenson (2022) has argued that Kant’s thesis that all transcendental truths are transcendentally a priori knowable leads to omniscience of all transcendental truths. His arguments depend on luminosity principles and closure principles for transcendental knowability. We will argue that one pair of a luminosity and a closure principle should not be used, because the closure principle is too strong, while the other pair of a luminosity and a closure principle should not be used, because the luminosity principle is too strong. Stephenson’s argument also depends on a factivity principle for transcendental knowability, which we will argue to be false.
+  url: https://www.mentis.de/view/journals/hpla/aop/article-10.30965-26664275-bja10073/article-10.30965-26664275-bja10073.xml
+  local: transcendental-knowability.pdf
 - title: 'Reseña: J. Adam Carter. Autonomous Knowledge: Radical Enhancement, Autonomy & The Future of Knowing. Oxford: Oxford UP, 2022, 159 pp. '
   date: 2023
   abstract: >
@@ -44,13 +51,6 @@
   extra: '(as co-author with Jan Heylen), *Revista de Humanidades de Valparaiso*, 23, 287-308'
   url: 'https://rhv.uv.cl/index.php/RHV/article/view/4095/3892'
   selected: true
-- title: 'Transcendental Knowability, Closure, Luminosity and Factivity: reply to Stephenson'
-  date: '2023'
-  extra: '(as co-author with Jan Heylen). *History of Philosophy and Logical Analysis*, doi:&nbsp;10.30965-26664275-bja10073'
-  abstract: >
-    Stephenson (2022) has argued that Kant’s thesis that all transcendental truths are transcendentally a priori knowable leads to omniscience of all transcendental truths. His arguments depend on luminosity principles and closure principles for transcendental knowability. We will argue that one pair of a luminosity and a closure principle should not be used, because the closure principle is too strong, while the other pair of a luminosity and a closure principle should not be used, because the luminosity principle is too strong. Stephenson’s argument also depends on a factivity principle for transcendental knowability, which we will argue to be false.
-  url: https://www.mentis.de/view/journals/hpla/aop/article-10.30965-26664275-bja10073/article-10.30965-26664275-bja10073.xml
-  local: transcendental-knowability.pdf
 - title: 'Compressing Graphs: A Model for the Content of Understanding'
   date: 2023
   extra: '*Erkenntnis*, doi:&nbsp;10.1007/s10670-023-00694-3'
