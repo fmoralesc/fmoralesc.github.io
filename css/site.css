@@ -7,6 +7,10 @@ body {
 	#contact, nav {
 		display: none;
 	}
+
+	h1 {
+		writing-mode: lr;
+	}
 }
 
 #blocks { 
@@ -39,6 +43,7 @@ nav div {
 h1 {
 	margin: 0;
 	padding: 0;
+	writing-mode: vertical-lr;
 	writing-mode: sideways-lr;
 	font-size: 4rem;
 	font-weight: normal;
