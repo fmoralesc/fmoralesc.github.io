@@ -94,6 +94,7 @@ details .abstract {
 }
 
 .dated-li {
+	word-break: break-word;
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 0.5em;
