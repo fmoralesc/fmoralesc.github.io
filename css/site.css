@@ -83,6 +83,10 @@ details {
 	margin-bottom:0.5em;
 }
 
+details summary {
+	word-break: break-all;
+}
+
 details .abstract {
 	font-size: 90%;
 	padding: 1em;
