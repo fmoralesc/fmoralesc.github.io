@@ -109,6 +109,10 @@ details .abstract {
 	width: 70ch;
 }
 
+.dated-li-details a {
+	word-break: break-all;
+}
+
 .li-extra-info {
 	font-size: 90%;
 }
