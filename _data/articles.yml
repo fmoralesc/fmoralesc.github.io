@@ -1,7 +1,7 @@
 - title: 'Reseña. Justin Clarke-Doane (2022) Mathematics and metaphilosophy. Cambridge University Press. 58pp.'
   date: 'forthcoming'
-  extra: 'Revista de Filosofia'
-- title: 'Cartesian know-how'
+  extra: '*Revista de Filosofia*'
+- title: 'Cartesian Know-How'
   date: 'forthcoming'
   abstract: > 
     In this paper, we examine the prospect of extracting an account of know-how from Descartes’ philosophy. Against the traditional take, we argue that Descartes views on know-how cannot be simply reduced to his account of theoretical knowledge. The key to understanding Descartes on know-how is to examine his accounts of moral certainty and the relation between the mind and the body in action.
@@ -13,14 +13,14 @@
     In this paper, I consider the question of whether calibration is required for modalizing mechanisms to be reliable, that is, whether it is necessary for modalizing mechanisms to be adjusted to prevent overgeneration and undergeneration of modal beliefs. I first argue that the calibration requirement affects differently what I call bootstrapping and ordinary cases. Identifying different ways in which a modalizing mechanism could be calibrated, I argue that not all of them are effective or even viable in bootstrapping cases. Then, by taking a diachronic perspective, I offer a simplified account of how different calibration mechanisms can be bootstrapped, with an emphasis on the social dimension of modal judgment.
   extra: '*Disputatio*'
   selected: true
-- title: 'Modalizing in musical performance'
+- title: 'Modalizing in Musical Performance'
   date: '2024'
   abstract: >
     This paper aims to connect  issues in the epistemology of modality with  issues in the philosophy of music, exploring how modalizing takes place in the context of musical performance. On the basis of studies of jazz improvisation and of classical music, it is shown that considerations about what is sonically, musically, and agentively possible play an important role for performers in the Western tonal tradition. We give a more systematic sketch  of how a modal epistemology for musical performance could be constructed. We argue that it is necessary to adopt a pluralist approach towards the modal epistemology of music.
   extra: '(with Giulia Lorenzi), *Mind & Language*'
   url: https://onlinelibrary.wiley.com/doi/10.1111/mila.12515
   selected: true
-- title: 'An epistemic argument for evolutionary dispositions'
+- title: 'An Epistemic Argument for Evolutionary Dispositions'
   date: '2024'
   extra: '(as co-author with Cristina Villegas) *Theoria: An International Journal for Theory, History and Foundations of Science*, 39/1, 89-108.'
 - title: '¿Es cartesiano el “teatro cartesiano” de Dennett?: Un análisis crítico desde el trialismo y el ens per se'
