@@ -1,8 +1,3 @@
-- title: 'On the possession and attribution problems for collective know-how'
-  abstract: 'In this paper, I examine two issues that any account of know-how, but particularly an account of group know-how, needs to deal with: the possession problem, which is the need to explain how a group can be in a state of knowing how to do something, and the attribution problem, which is the need to account for the conditions in which it is admissible to attribute know-how to a group. I argue that (despite some initial appearances) they are independent problems, which is specially important in the context of theories where know-how cannot in general be reduced to proposition-oriented attitudes.'
-  date: 'forthcoming'
-  extra: '*Aufklärung*.'
-  selected: true
 - title: 'Reseña. Justin Clarke-Doane (2022) Mathematics and metaphilosophy. Cambridge University Press. 58pp.'
   date: 'forthcoming'
   extra: '*Revista de Filosofia*.'
@@ -17,6 +12,12 @@
   abstract: > 
     In this paper, I consider the question of whether calibration is required for modalizing mechanisms to be reliable, that is, whether it is necessary for modalizing mechanisms to be adjusted to prevent overgeneration and undergeneration of modal beliefs. I first argue that the calibration requirement affects differently what I call bootstrapping and ordinary cases. Identifying different ways in which a modalizing mechanism could be calibrated, I argue that not all of them are effective or even viable in bootstrapping cases. Then, by taking a diachronic perspective, I offer a simplified account of how different calibration mechanisms can be bootstrapped, with an emphasis on the social dimension of modal judgment.
   extra: '*Disputatio*.'
+  selected: true
+- title: 'On the possession and attribution problems for collective know-how'
+  abstract: 'In this paper, I examine two issues that any account of know-how, but particularly an account of group know-how, needs to deal with: the possession problem, which is the need to explain how a group can be in a state of knowing how to do something, and the attribution problem, which is the need to account for the conditions in which it is admissible to attribute know-how to a group. I argue that (despite some initial appearances) they are independent problems, which is specially important in the context of theories where know-how cannot in general be reduced to proposition-oriented attitudes.'
+  date: '2024'
+  extra: '*Aufklärung*, 11, n. Especial Nov. 2024, 87-102.'
+  url: 'https://doi.org/10.18012/arf.v11iEspecial.69933'
   selected: true
 - title: 'Modalizing in Musical Performance'
   date: '2024'
