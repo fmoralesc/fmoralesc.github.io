@@ -16,8 +16,8 @@ language: es
 			<h2 >Biografía corta</h2>
 				<p>{{site.data.personalia.bio_es}}</p>
 			<p><span class="data">Area de Especialización</span>: {{ site.data.personalia.aos_es }}.</p>
-			<p><span class="data">Areas de Competencia</span>: {{ site.data.personalia.aoc_es | array_to_sentence_string}}.</p>
-			<p><span class="data">Areas of Interés</span>: {{site.data.personalia.aoi_es | array_to_sentence_string }}.</p>
+			<p><span class="data">Areas de Competencia</span>: {{ site.data.personalia.aoc_es | array_to_sentence_string: "y" }}.</p>
+			<p><span class="data">Areas of Interés</span>: {{site.data.personalia.aoi_es | array_to_sentence_string: "y" }}.</p>
 
 			<h2 >Educación</h2>
 			<div class='dated-list'>
