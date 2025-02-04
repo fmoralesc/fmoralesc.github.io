@@ -4,6 +4,12 @@ bio: |
   I am Doctor in
   Philosophy (received my degree at KU Leuven). My PhD thesis was on
   modal epistemology, and I am currently working on a postdoc project on know-how.
+bio_es: |
+  Soy un doctor en Filosofía (recibido en KU Leuven). Mi tesis doctoral trata de epistemología modal
+  y actualmente trabajo en un proyecto postdoctoral sobre el saber cómo.
 aos: Modal Epistemology
-aoc: ['Epistemology', 'Metaphysics', 'Metaphilosophy', 'Philosophical Logic']
+aos_es: Epistemologia modal
+aoc: ['Epistemology', 'Metaphysics', 'Philosophy of mind', Metaphilosophy', 'Philosophical Logic']
+aoc_es: ['Epistemología', 'Metafísica', 'Filosofía de la Mente', 'Metafilosofía', 'Lógica filosófica']
 aoi: ['Aesthetics', 'Ancient Skepticism', 'Philosophy of Mathematics']
+aoi_es: ['Estetica', 'Escepticismo antiguo', 'Filosofía de las Matemáticas']
