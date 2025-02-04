@@ -1,0 +1,113 @@
+---
+layout: default
+title: CV
+language: es
+---
+<div class='wrapper'>
+	<section class="cv" style='display: flex; flex-direction: row;'>
+
+		<div style='min-width:78ch'>
+			<h2>Dirección</h2>
+			{% for line in site.data.personalia.address %}
+			<p>{{line}}</p>
+			<p><a href="mailto:{{site.data.personalia.email}}">{{site.data.personalia.email}}</a></p>
+			{% endfor %}
+
+			<h2 >Biografía corta</h2>
+				<p>{{site.data.personalia.bio_es}}</p>
+			<p><span class="data">Area de Especialización</span>: {{ site.data.personalia.aos_es }}.</p>
+			<p><span class="data">Areas de Competencia</span>: {{ site.data.personalia.aoc_es | array_to_sentence_string}}.</p>
+			<p><span class="data">Areas of Interés</span>: {{site.data.personalia.aoi_es | array_to_sentence_string }}.</p>
+
+			<h2 >Educación</h2>
+			<div class='dated-list'>
+				{% for degree in site.data.education.degrees %}
+				<div class='dated-li'>
+					<div class='dated-li-date'>{{degree.dates}}</div>
+					<div class='dated-li-details'>
+						{{degree.description}}, {{degree.place}}.
+						{% if degree.project %}<p>Project: <em>{{degree.project}}</em>.</p>{% endif %}
+						<p>Thesis: <em>{{degree.thesis}}</em>.</p>
+						<p class='li-extra-info'>Supervisor: {{degree.supervisor}}.</br>
+						{% if degree.extra %}{{degree.extra}}{%endif%}</p>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+
+			<h2 >Becas</h2>
+			<div class='dated-list'>
+				{% for scholarship in site.data.scholarships %}
+				<div class='dated-li'>
+					<div class='dated-li-date'>{{scholarship.dates}}</div>
+					<div class='dated-li-details'><span lang="es-CL">{{scholarship.name}}, {{scholarship.institution}}.</span></div>
+				</div>
+				{% endfor %}
+			</div>
+
+			<h2 >Artículos</h2>
+			<div class='dated-list'>
+				{% for article in site.data.articles %}
+				<div class='dated-li'>
+					<div class='dated-li-date'>{{article.date}}</div>
+					<div class='dated-li-details'>“{{article.title}}", {{article.extra | markdownify | remove: '<p>' | remove: '</p>'}}{% if article.url %}<a href='{{article.url}}'>{{article.url}}{% endif %}</a></div>
+				</div>
+				{% endfor %}
+			</div>
+
+			<h2 >Charlas/Presentaciones</h2>
+			<div class='dated-list'>
+				{% for talk in site.data.talks %}
+				<div class='dated-li'>
+					<div class='dated-li-date'>{{talk.year}}{% if talk.date %}, {{talk.date}}{% endif %}</div>
+					<div class='dated-li-details'>"{{talk.title}}", <i>{{talk.venue}}</i></div>
+				</div>
+				{% endfor %}
+			</div>
+			
+			<h2>Eventos organizados</h2>
+			<div class='dated-list'>
+				{% assign events = site.data.others | where: "type", "event" %}
+				{% for event in events %}
+				<div class='dated-li'>
+					<div class='dated-li-date'>{{event.date}}</div>
+					<div class='dated-li-details'><i>{{event.title}}</i>, {{event.venue}}, <a href="{{event.url}}">{{event.url}}</a></div>
+				</div>
+				{% endfor %}
+			</div>
+
+			<h2 >Miscelánea</h2>
+			<div class='dated-list'>
+				{% assign online = site.data.others | where: "type", "online" %}
+				{% for item in online %}
+				<div class='dated-li'>
+					<div class='dated-li-date'>{{item.date}}</div>
+					<div class='dated-li-details'>“{{item.title}}”, {{item.extra}}. <a href="{{item.url}}">{{item.url}}</a></div>
+				</div>
+				{% endfor %}
+			</div>
+
+			<h2 >Edicion/Traducción</h2>
+			<div class='dated-list'>
+				{% assign online = site.data.others | where: "type", "edition" %}
+				{% for item in online %}
+				<div class='dated-li'>
+					<div class='dated-li-date'>{{item.date}}</div>
+					<div class='dated-li-details'><em>{{item.title}}</em>, {{item.extra}}.</div>
+				</div>
+				{% endfor %}
+			</div>
+
+			<h2>Experiencia de enseñanza</h2>
+			<div class='dated-list'>
+				{% for course in site.data.teaching %}
+				<div class='dated-li'>
+					<div class='dated-li-date'>{{course.date}}</div>
+					<div class='dated-li-details'>{{course.type}} {{course.course}} ({{course.level}} level), {{course.place}}.</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+
+	</section>
+</div>
