@@ -3,7 +3,7 @@
   date: 'January 21'
   venue: 'IV Workshop on Philosophy of Science, Universidad de Chile, Santiago, Chile'
   selected: true
-- title: 'Saber cómo com fuente de fricción epistémica'
+- title: 'Saber-cómo como fuente de fricción epistémica'
   year: 2024
   date: 'December 3'
   venue: 'XIX Congreso SIF, Montevideo, Uruguay'
@@ -20,7 +20,7 @@
   selected: true
 - title: 'Some reflections on the question of AI science'
   date: October 24
-  date: 2024
+  year: 2024
   venue: 'XXII Jornadas Rolando Chuaqui Kettlun, Santiago, Chile'
 - title: 'Group know-how is understanding-like'
   year: 2023
