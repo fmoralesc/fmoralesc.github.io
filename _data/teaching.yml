@@ -1,3 +1,8 @@
+- type: 'Profesor de Cátedra'
+  level: 'Bachelors'
+  course: 'Seminario: Introducción a la epistemología del saber-cómo'
+  place: 'Universidad de Chile'
+  date: '2025'
 - type: 'Profesor de Cátedra (Adjunct)'
   level: 'Bachelors'
   course: 'Philosophy of Social Science'
