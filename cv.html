@@ -45,6 +45,16 @@ articles:
 				{% endfor %}
 			</div>
 
+            <h2>Books</h2>
+			<div class='dated-list'>
+				{% for book in site.data.books %}
+				<div class='dated-li'>
+					<div class='dated-li-date'>{{book.date}}</div>
+                    <div class='dated-li-details'>“{{book.title}}", {{book.extra | markdownify | remove: '<p>' | remove: '</p>'}}. ISBN: {{book.isbn}}. {% if book.url %}<a href='{{book.url}}'>{{book.url}}{% endif %}</a></div>
+				</div>
+				{% endfor %}
+			</div>
+
 			<h2 >Articles</h2>
 			<div class='dated-list'>
 				{% for article in site.data.articles %}
