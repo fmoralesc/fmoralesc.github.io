@@ -101,6 +101,10 @@ nav .minor-nav {
         min-width: 20ch;
         padding-right: 2em;
     }
+
+    .dated-li {
+        flex-direction: column;
+    }
 } 
 
 @media(min-width: 100ch) and (hover: hover) {
