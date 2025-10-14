@@ -96,6 +96,11 @@ nav .minor-nav {
         padding: 1em;
         width: 100%;
     }
+
+    #content, .main div {
+        min-width: 20ch;
+        padding-right: 2em;
+    }
 } 
 
 @media(min-width: 100ch) and (hover: hover) {
@@ -107,6 +112,11 @@ nav .minor-nav {
     #contact {
         padding: 5em 2.5em;
     }
+
+    #content, .main div {
+        min-width: 78ch;
+        width: 78ch;
+    }
 }
 
 h2, h3, h4 {
@@ -117,7 +127,7 @@ h2, h3, h4 {
 
 
 #content {
-	width:78ch;
+	/* width:78ch; */
 	hyphens: auto;
 	text-align: justify;
 	padding-left: 1em;
