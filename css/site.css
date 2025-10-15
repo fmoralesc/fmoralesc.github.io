@@ -121,6 +121,10 @@ nav .minor-nav {
         min-width: 78ch;
         width: 78ch;
     }
+
+    .dated-li {
+        flex-direction: row;
+    }
 }
 
 h2, h3, h4 {
@@ -160,7 +164,6 @@ details .abstract {
 .dated-li {
 	word-break: break-word;
 	display: flex;
-	flex-direction: row;
 	margin-bottom: 0.5em;
 }
 
