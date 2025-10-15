@@ -105,6 +105,10 @@ nav .minor-nav {
     .dated-li {
         flex-direction: column;
     }
+
+    .dated-li-details {
+        width: auto;
+    }
 } 
 
 @media(min-width: 100ch) and (hover: hover) {
@@ -124,6 +128,10 @@ nav .minor-nav {
 
     .dated-li {
         flex-direction: row;
+    }
+
+    .dated-li-details {
+        width: 70ch;
     }
 }
 
@@ -172,9 +180,9 @@ details .abstract {
 	font-size: 90%;
 }
 
-.dated-li-details {
-	width: 70ch;
-}
+/* .dated-li-details { */
+/* 	width: 70ch; */
+/* } */
 
 .dated-li-details a {
 	word-break: break-all;
