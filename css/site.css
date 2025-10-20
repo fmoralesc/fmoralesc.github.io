@@ -44,8 +44,8 @@ nav div {
 h1 {
 	margin: 0;
 	padding: 0;
-	writing-mode: vertical-lr;
-	writing-mode: sideways-lr;
+    writing-mode: vertical-lr;
+    writing-mode: sideways-lr;
 	font-size: 4rem;
 	font-weight: normal;
 	min-width: 1.5em;
@@ -62,14 +62,53 @@ nav a {
 	color: #4d4d4d;
 }
 
+nav .minor-nav {
+    font-size: 0.9rem;
+}
+
+@media(max-width: 901px) {
+    h1 {
+        font-size: 2rem;
+        writing-mode: lr;
+        padding-bottom: 0.5em;
+    }
+
+    nav {
+        display: block ruby;
+        font-size: 0.9rem;
+        padding: 0.2em;
+    }
+
+    #contact { 
+        display: block ruby;
+        padding: 0.2em;
+        padding-left: 2em;
+        font-size: 0.8rem;
+    }
+
+    .main, #blocks, #nav-links {
+        display: flex;
+        flex-flow: column;
+    }
+} 
+
+@media(min-width: 900px) {
+    .main, #blocks, #nav-links {
+        display: flex;
+        flex-flow: row;
+    }
+
+    #contact {
+        padding: 5em 2.5em;
+    }
+}
+
 h2, h3, h4 {
 	font-family: 'Jost*','Jost', sans-serif;
 	font-weight: normal;
 }
 
-#contact {
-	padding: 5em 2.5em;
-}
+
 
 #content {
 	width:78ch;
