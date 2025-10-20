@@ -66,7 +66,7 @@ nav .minor-nav {
     font-size: 0.9rem;
 }
 
-@media (max-width: 100ch), (orientation: portrait) {
+@media(max-width: 100ch) {
     h1 {
         font-size: 2rem;
         writing-mode: lr;
