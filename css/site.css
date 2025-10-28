@@ -74,9 +74,14 @@ nav .minor-nav {
     }
 
     nav {
-        display: block ruby;
+        /* display: block ruby; */
         font-size: 0.9rem;
         padding: 0.2em;
+        margin-right: 1em;
+    }
+
+    nav div {
+        display: inline-block;
     }
 
     #nav-links {
