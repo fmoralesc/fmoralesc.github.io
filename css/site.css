@@ -115,6 +115,10 @@ nav .minor-nav {
         width: auto;
         padding-left: 1em;
     }
+
+    #image-self {
+        bottom: auto;
+    }
 } 
 
 @media(min-width: 100ch) and (hover: hover) {
@@ -138,6 +142,10 @@ nav .minor-nav {
 
     .dated-li-details {
         width: 70ch;
+    }
+
+    #image-self {
+        bottom: 0;
     }
 }
 
@@ -204,7 +212,7 @@ details .abstract {
 
 #image-self {
 	position: absolute;
-	bottom: 0;
+	/* bottom: 0; */
 	right: 0;
 }
 
