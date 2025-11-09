@@ -12,6 +12,16 @@ body {
 		writing-mode: lr;
         font-size: 3rem;
 	}
+
+    .dated-li {
+        flex-direction: column;
+    }
+
+    .dated-li-details {
+        width: auto;
+        padding-left: 1em;
+    }
+
 }
 
 #blocks { 
