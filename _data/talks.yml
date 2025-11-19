@@ -2,10 +2,12 @@
   year: 2025
   date: 'November 18'
   venue: 'VII Congreso Latinoamericano de Filosofía de la Educación, Santiago, Chile.'
+  selected: true
 - title: 'Epistemologías modales inductivas para la habilidad y el know-how'
   year: 2025
   date: 'November 7'
   venue: 'IX Congreso ACHIF, Talca Chile'
+  selected: true
 - title: 'Vicios epistémicos del saber-cómo'
   year: 2025
   date: 'November 5'
