@@ -1,15 +1,14 @@
 address: ['Isabel Riquelme Sur 1769, dpto. 43</br>Maipú, Santiago, RM, Chile']
 email: 'ef.em.carbonell@gmail.com'
 bio: |
-  I am Doctor in
-  Philosophy (received my degree at KU Leuven). My PhD thesis was on
-  modal epistemology, and I just completed a postdoc project on know-how (ANID FONDECYT/Postdoctorado 3220017).
+  I am Doctor in Philosophy (received my degree at KU Leuven). My PhD thesis was on
+  modal epistemology, and I just completed a postdoc project on know-how.
 bio_es: |
   Soy un doctor en Filosofía (recibido en KU Leuven). Mi tesis doctoral trata de epistemología modal
-  y acabo de completar un proyecto postdoctoral sobre el saber-cómo (ANID FONDECYT/Postdoctorado 3220017).
-aos: Modal Epistemology
-aos_es: Epistemología modal
-aoc: ['Epistemology', 'Metaphysics', 'Philosophy of mind', Metaphilosophy', 'Philosophical Logic']
-aoc_es: ['Epistemología', 'Metafísica', 'Filosofía de la Mente', 'Metafilosofía', 'Lógica filosófica']
-aoi: ['Aesthetics', 'Ancient Skepticism', 'Philosophy of Mathematics']
-aoi_es: ['Estética', 'Escepticismo antiguo', 'Filosofía de las Matemáticas']
+  y acabo de completar un proyecto postdoctoral sobre el saber-cómo.
+aos: Epistemology
+aos_es: Epistemología
+aoc: ['Philosophy of Science', 'Philosophy of mind', 'Philosophical Logic', Metaphilosophy', 'Metaphysics',]
+aoc_es: ['Filosofía de la ciencia', 'Filosofía de la Mente', 'Lógica filosófica', 'Metafilosofía', 'Metafísica',]
+aoi: ['Modal epistemology', 'Know-how, Ability, Skill', 'Understanding', 'Models']
+aoi_es: ['Epistemología modal', 'Saber-cómo, habilidades, destreza', 'Entendimiento', 'Modelos']
