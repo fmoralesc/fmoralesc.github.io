@@ -1,7 +1,8 @@
 - title: 'Idealisation as lossy compression'
   year: 2026
   date: 'January 16'
-  venue: '1st SOCHIFIC Conference, Valparaiso, Chile'
+  venue: '1st SOCHIFIC Conference'
+  location: 'Valparaiso, Chile'
 - title: 'Institutions you can trust'
   year: 2026
   date: 'January 8'
@@ -205,6 +206,7 @@
   date: June
   title: 'Non-assertion and modality - from Pyrrho to some contemporary debates'
   venue: <i>CLPS-DWMC Symposium</i>, Leuven.
+  location: Leuven
   selected: true
 - year: 2018
   date: January
