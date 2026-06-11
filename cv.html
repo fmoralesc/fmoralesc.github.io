@@ -60,7 +60,7 @@ articles:
 				{% for article in site.data.articles %}
 				<div class='dated-li'>
 					<div class='dated-li-date'>{{article.date}}</div>
-					<div class='dated-li-details'>“{{article.title}}", {{article.extra | markdownify | remove: '<p>' | remove: '</p>'}}{% if article.url %}<a href='{{article.url}}'>{{article.url}}{% endif %}</a></div>
+					<div class='dated-li-details'>“{{article.title}}", {{article.extra | markdownify | remove: '<p>' | remove: '</p>'}}{% if article.url %}<a href='{{article.url}}'>{{article.url}}{% endif %}</a>.</div>
 				</div>
 				{% endfor %}
 			</div>
@@ -70,7 +70,7 @@ articles:
 				{% for talk in site.data.talks %}
 				<div class='dated-li'>
 					<div class='dated-li-date'>{{talk.year}}{% if talk.date %}, {{talk.date}}{% endif %}</div>
-					<div class='dated-li-details'>"{{talk.title}}", <i>{{talk.venue}}</i></div>
+					<div class='dated-li-details'>"{{talk.title}}", <i>{{talk.venue}}</i>.</div>
 				</div>
 				{% endfor %}
 			</div>
@@ -81,7 +81,7 @@ articles:
 				{% for event in events %}
 				<div class='dated-li'>
 					<div class='dated-li-date'>{{event.date}}</div>
-					<div class='dated-li-details'><i>{{event.title}}</i>, {{event.venue}}, <a href="{{event.url}}">{{event.url}}</a></div>
+					<div class='dated-li-details'><i>{{event.title}}</i>, {{event.venue}}, <a href="{{event.url}}">{{event.url}}</a>.</div>
 				</div>
 				{% endfor %}
 			</div>
@@ -92,7 +92,7 @@ articles:
 				{% for item in online %}
 				<div class='dated-li'>
 					<div class='dated-li-date'>{{item.date}}</div>
-					<div class='dated-li-details'>“{{item.title}}”, {{item.extra}}. <a href="{{item.url}}">{{item.url}}</a></div>
+					<div class='dated-li-details'>“{{item.title}}”, {{item.extra}}. <a href="{{item.url}}">{{item.url}}</a>.</div>
 				</div>
 				{% endfor %}
 			</div>
@@ -113,7 +113,7 @@ articles:
 				{% for course in site.data.teaching %}
 				<div class='dated-li'>
 					<div class='dated-li-date'>{{course.date}}</div>
-					<div class='dated-li-details'>{{course.type}} {{course.course}} ({{course.level}} level), {{course.place}}.</div>
+					<div class='dated-li-details'>{{course.type}}, {{course.course}} ({{course.level}} level), {{course.place}}.</div>
 				</div>
 				{% endfor %}
 			</div>
