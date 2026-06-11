@@ -90,23 +90,24 @@
   abstract: >
     ¿Trae la posibilidad de mecanismos de mejoramiento cognitivo, como por ejemplo la posibilidad de implantar creencias en la mente de personas, preguntas nuevas a la epistemología? En este corto volumen, J. Adam Carter propone que sí. En particular, Carter argumenta que obliga a que consideremos la necesidad de una condición adicional en nuestras caracterizaciones del concepto de conocimiento: además de ser una forma de creencia verdadera justificada, que satisface una condición anti-Gettier, como aceptan la mayoría de los enfoques contemporáneos (en particular desde la perspectiva de la epistemología de las virtudes), el conocimiento debe satisfacer una condición de autonomía. En la práctica, esto significa que sujetos a quienes se haya implantado creencias que de otro modo satisfarían los estándares del conocimiento no tengan, por lo tanto, conocimiento, en contra de las predicciones de ciertos futuristas. 
   extra: '*Revista de Filosofía*, 80, 319-321.'
+  url: ' http://dx.doi.org/10.4067/S0718-43602023000100319'
 - title: '¿Quién sabe cómo? Re-examinando las atribuciones de know-how en contexto'
   date: 2023 
   abstract: >
     The debate between intellectualists and anti-intellectualists about know-how rages on. Kevin Wallbridge (2021) has argued that certain patterns of know-how attribution can be explained by a contextualist intellectualist theory (subject-specific intellectualism). In this paper, I examine Wallbridge’s proposal and argue that anti-intellectualists can also explain the data by appealing to the role of context in the attribution of ability.
-  extra: '*Palabra y Razón*, 24, 15-32'
+  extra: '*Palabra y Razón*, 24, 15-32.'
   url: 'https://doi.org/10.29035/pyr.24.15'
   selected: true
 - title: 'Concepts of Knowability'
   date: '2023'
   abstract: >
     Many philosophical discussions hinge on the concept of knowability. For example, there is a blooming literature on the so-called paradox of knowability. How to understand this notion, however? In this paper, we examine several approaches to the notion: the naive approach to take knowability as the possibility to know, the counterfactual approach endorsed by Edgington (1985) and Schlöder (2019), approaches based on the notion of a capacity or ability to know (Fara 2010, Humphreys 2011), and finally, approaches that make use of the resources of dynamic epistemic logic (van Benthem 2004, Holliday 2017).
-  extra: '(as co-author with Jan Heylen), *Revista de Humanidades de Valparaiso*, 23, 287-308'
+  extra: '(as co-author with Jan Heylen), *Revista de Humanidades de Valparaiso*, 23, 287-308.'
   url: 'https://rhv.uv.cl/index.php/RHV/article/view/4095/3892'
   selected: true
 - title: 'Compressing Graphs: A Model for the Content of Understanding'
   date: 2023
-  extra: '*Erkenntnis*, doi:&nbsp;10.1007/s10670-023-00694-3'
+  extra: '*Erkenntnis*, 90, 187-215.'
   abstract: >
     In this paper, I sketch a new model for the format of the content of understanding states, Compressible Graph Maximalism (CGM). In this model, the format of the content of understanding is graphical, and compressible.  It thus combines ideas from approaches that stress the link between understanding and holistic structure (like Grimm's (2016)), and approaches that emphasize the connection between understanding and compression (like Wilkenfeld's (2018)). I argue that the combination of these ideas has several attractive features, and I defend the idea against some challenges.
   selected: true
@@ -114,7 +115,7 @@
   local: compressing-graphs.pdf
 - title: 'Towards Subject Matters for Counterpossibles'
   date: 2022
-  extra: '*Studia Semiotyczne*, 35(2), 125-152'
+  extra: '*Studia Semiotyczne*, 35(2), 125-152.'
   abstract: >
     In this paper, I raise the problem of dealing with counterpossible conditionals for theories of subject matter. I argue that existing accounts of subject matter need to be revised and extended to be able to a) provide reasonable (potentially non-degenerate) verdicts about what counterpossibles are about, b) explain the intuition that counterpossibles are in some sense about what would happen if the antecedent were true, and c) explain in what sense counterpossibles can be about individuals. I sketch how one could extend atom-based and way-based theories of subject matters to handle the problem. Then, I raise the problem that it might be desirable for a theory of subject matter to prevent the inference that certain counterpossibles are about the kinds of things that they seem to mention.
   selected: true
@@ -122,7 +123,7 @@
   local: towards-subject-matters-counterpossibles.pdf
 - title: 'On Understanding People, Structure, Desires, and Ourselves'
   date: 2021
-  extra: '*Cinta de Moebio*, 72, 183-193'
+  extra: '*Cinta de Moebio*, 72, 183-193.'
   abstract: >
     Stephen Grimm defends the idea that for understanding people, we need to think of understanding not only in terms of grasp of structure (be that causal or of other kinds) but also in terms of a notion of understanding-as-taking-to-be-good.  In this paper, I critically examine this idea. First, I argue that in some cases, understanding-as-taking-to-be-good can be explained in terms of understanding-as-grasp-of-structure.  Then, I consider one further way in which understanding-as-taking-to-be-good could be obtained through something which is not a form of grasp of structure, which narrows and refines Grimm’s understanding-as-taking-to-be-good concept.
   selected: true
@@ -130,7 +131,7 @@
   local: understanding-people.pdf
 - title: 'Understanding Attributions: Problems, Options, and a Proposal'
   date: 2021
-  extra: '*Theoria*, 88, 558--583. doi:&nbsp;10.1111/theo.12380'
+  extra: '*Theoria*, 88, 558--583.'
   abstract: >
           In this paper, I give an overview of different models of understanding attribution, and advance a contextualist account of understanding attribution. While other contextualist accounts make the degree in which the epistemic states of the relevant agents satisfy certain invariant conditions context-sensitive, the proposed account makes the conditions themselves context-sensitive.
   selected: true
@@ -138,7 +139,7 @@
   local: understanding-attributions.pdf
 - title: Game Counterpossibles
   date: 2020
-  extra: '*Argumenta*, 6(1), 117-133. doi:&nbsp;10.150pt75/2465-2334/202011.mor'
+  extra: '*Argumenta*, 6(1), 117-133.'
   abstract: >
           Counterpossibles, counterfactuals conditional with impossible antecedents, are notoriously contested; while the standard view makes them trivially true, some authors argue that they can be non-trivially true. In this paper, I examine the use of counterfactuals in the context of games, and argue that there is a case to be made for their non-triviality in a restricted sense. In particular, I examine the case of retro problems in chess, where it can happen that one is tasked with evaluating counterfactuals about illegal positions. If we understand illegality as a type of restricted impossibility, those counterfactuals are non-trivial counterpossibles. I suggest that their non-triviality stems from their role in practices of rule coordination and revision, and suggest that this model could be generalized to counterpossibles in different domains. I then compare the approach to the accounts of Vetter 2016 and Locke 2019.
   selected: true
@@ -146,7 +147,7 @@
   local: game-counterpossibles.pdf
 - title: Epistemic Projects, Indispensability and the Structure of Modal Thought
   date: 2020
-  extra: '*Res Philosophica*, 97(4), 611–638, doi:&nbsp;10.11612/resphil.1946'
+  extra: '*Res Philosophica*, 97(4), 611–638.'
   abstract: >
           I argue that modal epistemology should pay more attention to questions about the structure and function of modal thought. We can treat these questions from synchronic and diachronic angles. From a synchronic perspective, I consider whether a general argument for the epistemic support of modal though can be made on the basis of modal thoughs’s indispensability for what Enoch and Schechter (2008) call rationally required epistemic projects. After formulating the argument, I defend it from various objections. I also examine the possibility of considering the indispensability of modal thought in terms of its components. Finally, I argue that we also need to approach these issues from a diachronic perspective, and I sketch how to approach this task.
   selected: true
@@ -154,11 +155,11 @@
   local: indispensability-modal.pdf
 - title: 'Mistakes as Revealing and as Manifestations of Competence'
   date: 2019
-  extra: '*Synthese*, doi:&nbsp;10.1007/s11229-019-02281-y'
+  extra: '*Synthese*, 198, 3289-3308.'
   abstract: >
           The final chapter of Elgin’s (True enough, The MIT Press, Cambridge, 2017) defends the claim that some mistakes mark significant epistemic achievements. Here, I extend Elgin’s analysis of the informativeness of mistakes for epistemic policing. I also examine the type of theory of competence that Elgin’s view requires, and suggest some directions in which this can be taken.
   selected: true
-  url: https://rdcu.be/bGkY9
+  url: 'https://doi.org/10.1007/s11229-019-02281-y'
   local: mistakes.pdf
 - title: 'What is the Locus of Abilities?'
   date: 2018
