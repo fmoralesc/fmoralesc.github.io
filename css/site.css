@@ -21,7 +21,6 @@ body {
         width: auto;
         padding-left: 1em;
     }
-
 }
 
 #blocks { 
@@ -252,4 +251,10 @@ details .abstract {
 
 .wk-date {
 	margin-bottom: 1em;
+}
+
+@media print {
+    #contact {
+        display: none;
+    }
 }
