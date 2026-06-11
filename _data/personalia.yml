@@ -12,3 +12,37 @@ aoc: ['Philosophy of Science', 'Philosophy of mind', 'Philosophical Logic', Meta
 aoc_es: ['Filosofía de la ciencia', 'Filosofía de la Mente', 'Lógica filosófica', 'Metafilosofía', 'Metafísica',]
 aoi: ['Modal epistemology', 'Know-how, Ability, Skill', 'Understanding', 'Models']
 aoi_es: ['Epistemología modal', 'Saber-cómo, habilidades, destreza', 'Entendimiento', 'Modelos']
+skills: 
+  - name: Programming
+    values: 
+      - Python
+      - Lua
+      - Javascript
+      - HTML + CSS
+  - name: Typesetting
+    values: 
+      - LaTeX
+      - Typst
+service:
+  - kind: Member of
+    values:
+      - AChEFA
+      - Sociedad Latinoamericana Peirce
+      - SoChiFiC
+      - AChiF
+  - kind: Editor of
+    values:
+      - Homónima, Revista de Filosofía
+  - kind: Reviewer for
+    values:
+      - Synthese
+      - Philosophia
+      - Sophia
+      - Journal of Value Inquiry
+      - Logique et Analyse
+      - Revista de Humanidades de Valparaíso
+      - Revista de Filosofía (Universidad de Chile)
+      - Manuscrito
+      - The Apricot
+      - Philosophical Forum
+      - Filozofia Nauki

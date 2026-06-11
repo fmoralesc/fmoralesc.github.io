@@ -117,6 +117,34 @@ articles:
 				</div>
 				{% endfor %}
 			</div>
+
+            <h2>Service and community</h2>
+            <ul>
+                {% for service in site.data.personalia.service %}
+                    <li>
+                        {{ service.kind }}
+                        <ul>
+                        {% for val in service.values %}
+                            <li>{{ val }}</li>
+                        {% endfor %}
+                        </ul>
+                    </li>
+                {% endfor %}
+            </ul>
+
+            <h2>Skills</h2>
+            <ul>
+                {% for skill in site.data.personalia.skills %}
+                    <li>
+                        {{ skill.name }}
+                        <ul>
+                        {% for val in skill.values %}
+                            <li>{{ val }}</li>
+                        {% endfor %}
+                        </ul>
+                    </li>
+                {% endfor %}
+            </ul>
 		</div>
 
 	</section>
