@@ -161,9 +161,10 @@
   selected: true
   url: 'https://doi.org/10.1007/s11229-019-02281-y'
   local: mistakes.pdf
-- title: 'What is the Locus of Abilities?'
+- title: 'What is the locus of abilities?'
   date: 2018
-  extra: '*Rivista Italiana di Filosofia del Linguaggio*, 12(2), 19-30, doi:&nbsp;10.4396/20180201'
+  extra: '*Rivista Italiana di Filosofia del Linguaggio*, 12(2), 19-30.'
+  url: 'https://rifl.unical.it/index.php/rifl/article/view/501'
 - title: 'On the Question of the Indispensability of Modal Thought'
   date: 2018
   extra: '*Proceedings of the IX Conference of the Spanish Society of Logic, Methodology and Philosophy of Science*, ISBN: 978-84-09-06054-2'
