@@ -3,6 +3,10 @@ body {
 	background-color: #f7f3d0;
 }
 
+@page {
+    margin-bottom: 1in;
+}
+
 @media print {
 	#contact, nav {
 		display: none;
@@ -185,6 +189,10 @@ details summary {
 details .abstract {
 	font-size: 90%;
 	padding: 1em;
+}
+
+.data {
+    font-style: italic;
 }
 
 .dated-list {
