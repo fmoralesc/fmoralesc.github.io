@@ -15,9 +15,15 @@ body {
 	h1 {
 		writing-mode: lr;
         font-size: 3rem;
+        line-height: 1.5;
 	}
 
+    h2 {
+        line-height: 1;
+    }
+
     .dated-li {
+        margin-top: 0.2em;
         flex-direction: column;
     }
 
@@ -209,6 +215,7 @@ details .abstract {
 .dated-li-date {
 	width: 25ch;
 	font-size: 90%;
+    color: #303030;
 }
 
 /* .dated-li-details { */
