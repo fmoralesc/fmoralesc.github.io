@@ -6,90 +6,109 @@
 - title: 'Institutions you can trust'
   year: 2026
   date: 'January 8'
-  venue: 'Workshop Distrust in Institutions II, Santiago, Chile'
+  venue: 'Workshop Distrust in Institutions II'
+  location: 'Santiago, Chile'
 - title: 'Un modelo epistemológico de la confusión en el proceso de aprendizaje'
   year: 2025
   date: 'November 18'
-  venue: 'VII Congreso Latinoamericano de Filosofía de la Educación, Santiago, Chile'
+  venue: 'VII Congreso Latinoamericano de Filosofía de la Educación'
+  location: 'Santiago, Chile'
   selected: true
 - title: 'Epistemologías modales inductivas para la habilidad y el know-how'
   year: 2025
   date: 'November 7'
-  venue: 'IX Congreso ACHIF, Talca Chile'
+  venue: 'IX Congreso ACHIF'
+  location: 'Talca, Chile'
   selected: true
 - title: 'Vicios epistémicos del saber-cómo'
   year: 2025
   date: 'November 5'
-  venue: 'Simposio "Saber cómo, sociedad y confianza", IX Congreso ACHIF, Talca, Chile'
+  venue: 'Simposio "Saber cómo, sociedad y confianza", IX Congreso ACHIF'
+  location: 'Talca, Chile'
   selected: true
 - title: 'Puzzles, graphs, know-how and understanding: towards a theory of content'
   year: 2025
   date: 'October 9'
-  venue: 'XXV Jornadas Rolando Chuaqui Kettlun, Concepción, Chile'
+  venue: 'XXV Jornadas Rolando Chuaqui Kettlun'
+  location: 'Concepción, Chile'
   selected: true
 - title: 'Peircean knowability and Fitch-like paradoxes'
   year: 2025
   date: 'September 25'
-  venue: 'Tercer Congreso de la Sociedad Latinoamericana Peirce, Valparaíso, Chile'
+  venue: 'Tercer Congreso de la Sociedad Latinoamericana Peirce'
+  location: 'Valparaíso, Chile'
 - title: '"Throwing like a girl" re-examinado: sobre la injusticia epistémica modal agencial'
   year: 2025
   date: 'September 24'
-  venue: 'I Jornadas de Investigación en Filosofía, Epistemología y Género Felicitas Valenzuela, Concepción, Chile'
+  venue: 'I Jornadas de Investigación en Filosofía, Epistemología y Género Felicitas Valenzuela'
+  location: 'Concepción, Chile'
 - title: 'Knowing how to do something similarly'
   year: 2025
   date: 'May 28'
-  venue: 'Issues on the (Im)possible XI. Slovak Academy of Sciences, Bratislava, Slovakia'
+  venue: 'Issues on the (Im)possible XI. Slovak Academy of Sciences'
+  location: 'Bratislava, Slovakia'
   selected: true
 - title: 'How-possible models for impossibilities'
   year: 2025
   date: 'May 8'
-  venue: 'Necessity and Possibility in Science. Catholique Universiteit Louvan, Louvain-la-Neuve, Belgium'
+  venue: 'Necessity and Possibility in Science.'
+  location: 'Catholique Universiteit Louvan, Louvain-la-Neuve, Belgium'
   selected: true
 - title: 'Theories, models, subject matters, and questions'
   year: 2025
   date: 'May 3'
-  venue: 'Models and Theories: Book Symposium on Roman Friggs Philosophical Inquiry, Universität Postdam, Postdam, Germany'
+  venue: 'Models and Theories: Book Symposium on Roman Friggs Philosophical Inquiry'
+  location: 'Universität Postdam, Postdam, Germany'
 - title: 'How-possible models for impossibilities'
   year: 2025
   date: 'January 21'
-  venue: 'IV Workshop on Philosophy of Science, Universidad de Chile, Santiago, Chile'
+  venue: 'IV Workshop on Philosophy of Science'
+  location: 'Universidad de Chile, Santiago, Chile'
   selected: true
 - title: 'Saber-cómo como fuente de fricción epistémica'
   year: 2024
   date: 'December 3'
-  venue: 'XIX Congreso SIF, Montevideo, Uruguay'
+  venue: 'XIX Congreso SIF'
+  location: 'Montevideo, Uruguay'
   selected: false
 - title: 'Know how and epistemic friction'
   year: 2024
   date: 'September 4'
-  venue: 'XXIV Jornadas Rolando Chuaqui Kettlun, Valparaiso, Chile'
+  venue: 'XXIV Jornadas Rolando Chuaqui Kettlun'
+  location: 'Valparaiso, Chile'
   selected: true
 - title: 'Imagining how'
   year: 2024
   date: April 12
-  venue: 'Workshop: Llegando a saber como, Universidad de Chile'
+  venue: 'Workshop: Llegando a saber como'
+  location: 'Universidad de Chile, Santiago, Chile'
   selected: true
 - title: 'Some reflections on the question of AI science'
   date: October 24
-  year: 2024
-  venue: 'XXII Jornadas Rolando Chuaqui Kettlun, Santiago, Chile'
+  year: 204
+  venue: 'XXII Jornadas Rolando Chuaqui Kettlun'
+  location: 'Santiago, Chile'
 - title: 'Group know-how is understanding-like'
   year: 2023
   date: October 9
-  venue: '3º Encontro Cognição & Linguagem, CLE UNICAMP, Campinas, Brasil'
+  venue: '3º Encontro Cognição & Linguagem'
+  location: 'CLE UNICAMP, Campinas, Brasil'
   selected: true
 - title: 'What the Tortoise should have asked Achilles'
   year: 2023
   date: July 25
-  venue: '17th CLMPST, Buenos Aires, Argentina'
+  venue: '17th CLMPST'
+  location: 'Buenos Aires, Argentina'
 - title: 'Alien questions and knowability'
   year: 2023
   date: June 6
-  venue: 'Workshop on the concept and scope of knowability, Leuven, Belgium'
+  venue: 'Workshop on the concept and scope of knowability'
+  location: 'Leuven, Belgium'
 - title: 'Know-how desde una perspectiva minimalista'
   year: 2023
   date: May 26
-  venue: 'IX Coloquio Lenguaje y Cognición, Santiago, Chile'
+  venue: 'IX Coloquio Lenguaje y Cognición'
+  location: 'Santiago, Chile'
   selected: true
 - title: 'Commentary on Zuzanna Rucinska "Do we perceive or do we imagine in virtual realities?"'
   year: 2023
@@ -98,17 +117,20 @@
 - title: 'Compressing Graphs'
   year: 2022
   date: October 21
-  venue: 'CLPS Seminar, HIW, Leuven, Belgium'
+  venue: 'CLPS Seminar, HIW'
+  location: 'Leuven, Belgium'
   selected: true
 - title: 'Modalizing Together'
   year: 2022
   date: October 17
-  venue: 'Issues on the (Im)Possible, Tilburg, Netherlands'
+  venue: 'Issues on the (Im)Possible'
+  location: 'Tilburg, Netherlands'
   selected: true
 - title: 'What is that Question? On Holding an Epistemic Relation to a Question'
   year: 2022
   date: October 5
-  venue: 'XXII Jornadas Rolando Chuaqui Kettlun, Santiago, Chile'
+  venue: 'XXII Jornadas Rolando Chuaqui Kettlun'
+  location: 'Santiago, Chile'
 - title: 'What is that Question? Knowledge of Questions vs Knowledge of things'
   year: 2022
   date: August 2
@@ -116,11 +138,13 @@
 - title: 'Modalizing in Musical Performance (poster)'
   year: 2022
   date: July 22
-  venue: 'SPP/ESPP Conference, Milan, Italy (online participation)'
+  venue: 'SPP/ESPP Conference'
+  location: 'Milan, Italy (online participation)'
 - title: 'Calibrating and Bootstrapping Modal Judgment'
   year: 2022
   date: June 30
-  venue: 'IV Blasco Disputatio, Universidad de Valencia, Spain'
+  venue: 'IV Blasco Disputatio'
+  location: 'Universidad de Valencia, Spain (participated online)'
   selected: true
 - title: 'Commentary on Sofia Ortiz-Hinojosa "Can Daydreaming Too Much Constitute a Pathology of Its Own?"'
   year: 2022
@@ -129,20 +153,24 @@
 - title: 'The Content of Understanding as Compressed Graphs'
   year: 2022
   date: April 21
-  venue: '4th Scientific Understanding and Representation (SURe) Workshop, New York, USA (online)'
+  venue: '4th Scientific Understanding and Representation (SURe) Workshop'
+  location: 'New York, USA (participated online)'
   selected: true
 - title: 'Modal Judgement in Musical Performance'
   year: 2021
   date: December 2
-  venue: '(with Giulia Lorenzi) <i>PG WIP Seminar</i>, Warwick, UK'
+  venue: '(with Giulia Lorenzi) <i>PG WIP Seminar</i>'
+  location: 'Warwick, UK'
 - title: 'Disyunción y Topicalidad'
   year: 2021
   date: October 22
-  venue: '<i>XXI Jornadas Rolando Chuaqui Kettlun</i>, Universidad de Santiago, Santiago, Chile'
+  venue: '<i>XXI Jornadas Rolando Chuaqui Kettlun</i>'
+  location: 'Universidad de Santiago, Santiago, Chile'
 - title: 'Contemporary Concepts of Knowability'
   year: 2021
   date: September 2
-  venue: '(with Jan Heylen) <i>Knowability and the Limits of Knowledge</i>, Leuven, Belgium (online)'
+  venue: '(with Jan Heylen) <i>Knowability and the Limits of Knowledge</i>'
+  location: 'Leuven, Belgium (participated online)'
 - title: 'The Search for Know-How'
   year: 2021
   date: August 4
@@ -150,7 +178,8 @@
 - title: 'The Dynamics of Daydreaming in a Ballistic Model'
   year: 2021
   date: June 23
-  venue: '<i>Extremes of Mind-Wandering</i> Conference, University of Edinburgh, Online'
+  venue: '<i>Extremes of Mind-Wandering</i> Conference'
+  location: 'University of Edinburgh, UK (participated online)'
   selected: true
 - title: 'things that slowly fill all there ever was'
   year: 2021
@@ -159,17 +188,20 @@
 - title: 'Counterpossibles in Games and Subject Matters for Counterpossibles'
   year: 2020
   date: November 6
-  venue: '<i>CLPS Seminar</i>, Leuven, Belgium'
+  venue: 'CLPS Seminar'
+  location: 'Leuven, Belgium'
   selected: true
 - year: 2020
   date: August 27
   title: "Subject matter for counterpossibles"
-  venue: '<i>ECAP 10</i>, Utrecht (Online)'
+  venue: 'ECAP 10'
+  location: 'Utrecht (participated online)'
   selected: true
 - year: 2019
   date: August 27-30
   title: '"Imagined, supposed and impossible ways" (individual presentation) & "Counterfactual knowability, once again" (with Jan Heylen)'
-  venue: '<i>XX Jornadas Rolando Chuaqui Kettlun</i>, Santiago, Chile'
+  venue: 'XX Jornadas Rolando Chuaqui Kettlun'
+  location: 'Santiago, Chile'
 - year: 2019
   date: July 19-21
   title: "What about the bees? Generality and holism in geometry and modality"
