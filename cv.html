@@ -60,7 +60,7 @@ articles:
 				{% for article in site.data.articles %}
 				<div class='dated-li'>
 					<div class='dated-li-date'>{{article.date}}</div>
-					<div class='dated-li-details'>“{{article.title}}", {{article.extra | markdownify | remove: '<p>' | remove: '</p>'}}{% if article.url %}<a href='{{article.url}}'>{{article.url}}{% endif %}</a>.</div>
+					<div class='dated-li-details'>“{{article.title}}", {{article.extra | markdownify | remove: '<p>' | remove: '</p>'}}. {% if article.url %}<a href='{{article.url}}'>{{article.url}}.{% endif %}</a></div>
 				</div>
 				{% endfor %}
 			</div>
