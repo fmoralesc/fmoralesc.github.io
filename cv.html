@@ -10,7 +10,8 @@ articles:
 			<h2>Contact</h2>
 			{% for line in site.data.personalia.address %}
 			<p>{{line}}</p>
-			<p><a href="mailto:{{site.data.personalia.email}}">{{site.data.personalia.email}}</a></p>
+			<p><i class="far fa-envelope"></i><a href="mailto:{{site.data.personalia.email}}">{{site.data.personalia.email}}</a></p>
+            <p><i class="fa-brands fa-orcid"></i><a href="{{site.data.personalia.orcid}}">{{site.data.personalia.orcid}}</a></p>
 			{% endfor %}
 
 			<h2 >Short biography</h2>

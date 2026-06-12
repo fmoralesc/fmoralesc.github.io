@@ -1,6 +1,7 @@
 body {
 	margin: 0px;
 	background-color: #f7f3d0;
+    hyphens: auto;
 }
 
 @page {
@@ -19,7 +20,8 @@ body {
 	}
 
     h2 {
-        line-height: 1;
+        font-size: 1.3rem;
+        line-height: 0.85;
     }
 
     .dated-li {
