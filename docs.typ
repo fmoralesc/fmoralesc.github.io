@@ -36,7 +36,7 @@
                                         #link(article.url)[\[url\]]
                                     ]
                                     #if article.at("local", default: "") != "" [
-                                        #link(article.local)[\[pdf\]]
+                                        #link("/assets/" + article.local)[\[pdf\]]
                                     ]
                                 ]
                                 #html.div(class: "abstract")[#article.abstract]
@@ -378,5 +378,5 @@ código fuente: #link("https://github.com/montbretia/como-libro")[\@github]
 
 #asset("css/site.css", read("css/site.css"))
 
-#asset("assets/avatar.png", read("assets/avatar2.png", encoding: none))
-#asset("assets/como.pdf", read("assets/como.pdf", encoding: none))
+#asset("assets/avatar.png", read("docs/assets/avatar2.png", encoding: none))
+#asset("assets/como.pdf", read("docs/assets/como.pdf", encoding: none))
