@@ -1,4 +1,5 @@
 #import "template.typ": dated-li, default_template
+#import "cv.typ": build_cv
 #import "bib.typ": bib_info_cv, bib_info_research, talk_info_cv
 
 #default_template("index", [Home])[
@@ -146,17 +147,19 @@
 #default_template("cv", [CV])[
   #let personalia = yaml("_data/personalia.yml")
 
-  #html.section[
+  #html.section(style: "position: relative")[
+    #html.div(style: "float: right")[#link(<cv-pdf>)[#html.i(class: "fa-regular fa-file-pdf") pdf]]
+
     = Contact
 
     // #personalia
 
     #for line in personalia.address [
-      #line.replace("</br>", "\n")
+      #line.replace("</br>", ".\n")
     ]
 
     #html.i(class: "far fa-envelope")[] #html.a(
-      href: "mailto" + personalia.email,
+      href: "mailto:" + personalia.email,
     )[#personalia.email]
 
     #html.i(class: "fa-brands fa-orcid")[] #link(
@@ -168,7 +171,6 @@
     #personalia.bio
 
     _Area of Specialization_: #personalia.aos.
-
 
     _Areas of Competence_: #personalia.aoc.join(", ", last: ", and ")
 
@@ -356,6 +358,8 @@
 
   ]
 ]
+
+#build_cv()
 
 #default_template("libro-como", [¿Cómo?])[
 
