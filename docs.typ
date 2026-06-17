@@ -26,7 +26,7 @@
         #html.section[
           #html.h2[Publications]
 
-          A selection of representative papers (click to see the abstracts).
+          A selection of representative papers (click triangle to see the abstracts).
 
           #for article in yaml("_data/articles.yml") {
             if (

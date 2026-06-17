@@ -1,7 +1,7 @@
 - ship: &postdoc
   dates: 2022-2025
   name: 'Beca FONDECYT de Postdoctorado 2022, Projecto 3220017: "Saber Cómo, Preguntas, Maneras e Intentos"'
-  institution: ANID, Chile
+  institution: ANID (Agencia Nacional de Investigación y Desarrollo), Chile
 - ship: &phdship
   dates: 2017-2021
   name: Beca Chile para estudios de Doctorado en el Extranjero (Chile Scholarship for Doctoral Studies Abroad)

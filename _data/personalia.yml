@@ -27,10 +27,10 @@ skills:
 service:
   - kind: Member of
     values:
-      - AChEFA
+      - AChEFA (Asociación Chilena de Estudiantes de Filosofía)
       - Sociedad Latinoamericana Peirce
-      - SoChiFiC
-      - AChiF
+      - SoChiFiC (Sociedad Chilena de Filosofía de la Ciencia)
+      - AChiF (Asociación Chilena de Filosofía)
   - kind: Editor of
     values:
       - Homónima, Revista de Filosofía
