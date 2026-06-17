@@ -1,0 +1,282 @@
+body {
+	margin: 0px;
+	background-color: #f7f3d0;
+    hyphens: auto;
+}
+
+@page {
+    margin-bottom: 1in;
+}
+
+@media print {
+	#contact, nav {
+		display: none;
+	}
+
+	h1 {
+		writing-mode: lr;
+        font-size: 3rem;
+        line-height: 1.5;
+	}
+
+    h2 {
+        font-size: 1.3rem;
+        line-height: 0.85;
+    }
+
+    .dated-li {
+        margin-top: 0.2em;
+        flex-direction: column;
+    }
+
+    .dated-li-details {
+        width: auto;
+        padding-left: 1em;
+    }
+}
+
+#blocks { 
+	display:flex;
+	flex-direction: row;
+	align-items: flex-start;
+	font-family: "Jost*", 'Jost', sans-serif;
+}
+
+#sidebar {
+	display: flex;
+	flex-direction: column;
+}
+
+#nav-links {
+	display: flex;
+	flex-direction: row;
+	padding: 1em;
+}
+
+nav {
+	font-size: larger;
+}
+
+nav div {
+	margin-bottom: 0.3em;
+}
+
+
+h1 {
+	margin: 0;
+	padding: 0;
+    writing-mode: vertical-lr;
+    writing-mode: sideways-lr;
+	font-size: 4rem;
+	font-weight: normal;
+	min-width: 1.5em;
+	color: #505050;
+	white-space: nowrap;
+}
+
+h1 a {
+	text-decoration: none;
+	color: black;
+}
+
+nav a {
+	color: #4d4d4d;
+}
+
+nav .minor-nav {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 100ch), (hover: none) {
+    h1 {
+        font-size: 2rem;
+        writing-mode: lr;
+        padding-bottom: 0.5em;
+    }
+
+    nav {
+        /* display: block ruby; */
+        font-size: 0.9rem;
+        padding: 0.2em;
+        margin-right: 1em;
+    }
+
+    nav div {
+        display: inline-block;
+    }
+
+    #nav-links {
+        flex-flow: column;
+    }
+
+    #contact { 
+        display: block ruby;
+        padding: 0.2em;
+        padding-left: 2em;
+        font-size: 0.8rem;
+    }
+
+    .main, #blocks, #nav-links, #tbl-wrapper {
+        display: flex;
+        flex-flow: column;
+        padding: 1em;
+        width: 100%;
+    }
+
+    #content, .main div {
+        min-width: 20ch;
+        padding-right: 2em;
+    }
+
+    .dated-li {
+        flex-direction: column;
+    }
+
+    .dated-li-details {
+        width: auto;
+        padding-left: 1em;
+    }
+
+    #image-self {
+        bottom: auto;
+    }
+} 
+
+@media(min-width: 100ch) and (hover: hover) {
+    .main, #blocks, #nav-links, #tbl-wrapper {
+        display: flex;
+        flex-flow: row;
+    }
+
+    #contact {
+        padding: 5em 2.5em;
+    }
+
+    #content, .main div {
+        min-width: 78ch;
+        width: 78ch;
+    }
+
+    .dated-li {
+        flex-direction: row;
+    }
+
+    .dated-li-details {
+        width: 70ch;
+    }
+
+    #image-self {
+        bottom: 0;
+    }
+}
+
+h2, h3, h4 {
+	font-family: 'Jost*','Jost', sans-serif;
+	font-weight: normal;
+}
+
+
+
+#content {
+	/* width:78ch; */
+	hyphens: auto;
+	text-align: justify;
+	padding-left: 1em;
+	font-family: "Adobe Caslon Pro", serif;
+	font-size: 12pt;
+}
+
+details {
+	margin-bottom:0.5em;
+}
+
+details summary {
+	word-break: break-word;
+}
+
+details .abstract {
+	font-size: 90%;
+	padding: 1em;
+}
+
+.data {
+    font-style: italic;
+}
+
+.dated-list {
+	display: flex;
+	flex-direction: column;
+}
+
+.dated-li {
+	word-break: break-word;
+	display: flex;
+	margin-bottom: 0.5em;
+}
+
+.dated-li-date {
+	width: 25ch;
+	font-size: 90%;
+    color: #303030;
+}
+
+/* .dated-li-details { */
+/* 	width: 70ch; */
+/* } */
+
+.dated-li-details p {
+    margin-top: 0px;
+}
+
+.dated-li-details a {
+	word-break: break-all;
+}
+
+.li-extra-info {
+    margin-top: 0px;
+	font-size: 95%;
+}
+
+#teaching-list li {
+	margin-bottom: 0.5em;
+}
+
+#image-self {
+	position: absolute;
+	/* bottom: 0; */
+	right: 0;
+}
+
+.multicol {
+	columns: 3;
+	column-width: 70ch;
+}
+
+.wk-wrapper {
+	background: #ffe9aa;
+	padding: 1em;
+	font-family: 'Jost', sans-serif;
+}
+
+.wk-wrapper img {
+	width: 100%;
+}
+
+.wk-wrapper h2 {
+	font-weight: 500;
+}
+
+.wk-afil {
+	font-size: 90%;
+	color: #505050;
+}
+
+.wk-date {
+	margin-bottom: 1em;
+}
+
+@media print {
+    #contact {
+        display: none;
+    }
+}

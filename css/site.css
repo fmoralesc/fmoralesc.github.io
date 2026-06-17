@@ -224,11 +224,16 @@ details .abstract {
 /* 	width: 70ch; */
 /* } */
 
+.dated-li-details p {
+    margin-top: 0px;
+}
+
 .dated-li-details a {
 	word-break: break-all;
 }
 
 .li-extra-info {
+    margin-top: 0px;
 	font-size: 95%;
 }
 
