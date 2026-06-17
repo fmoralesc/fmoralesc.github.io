@@ -23,7 +23,8 @@
               #html.nav[
                 #html.div[#link(<index>)[Home]]
                 #html.div[#link(<research>)[Research]]
-                #html.div(class: "minor-nav")[#link(<libro-como>)[🕮 ¿Cómo?]]
+                #html.div(class: "minor-nav")[#link(<libro-como>)[#html.i(class:
+                                "fa-solid fa-book")¿Cómo?]]
                 #html.div[#link(<talks>)[Talks]]
                 #html.div[#link(<teaching>)[Teaching]]
                 #html.div[#link(<cv>)[CV]]
