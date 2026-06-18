@@ -336,7 +336,7 @@
 
     #stack(
       for degree in yaml("_data/education.yml").degrees [
-        #grid(columns: (1fr, 4fr), 
+        #dated_li( 
           grid.cell()[#degree.dates],
           grid.cell()[
             #degree.description.replace(
@@ -355,7 +355,7 @@
 
     #stack(
       for scholarship in yaml("_data/scholarships.yml") [
-        #grid(columns: (1fr, 4fr),
+        #dated_li(
           [#scholarship.dates],
           [#scholarship.name. #scholarship.institution.],
         )
@@ -374,7 +374,7 @@
     #stack(
       for event in others {
         if event.type == "event" [
-          #grid(columns: (1fr, 4fr),
+          #dated_li(
             [#event.date.replace(", November 5", "").replace(", April 12", "")],
             [
 
@@ -392,7 +392,7 @@
 
     #stack(
       for pos in yaml("_data/teaching.yml") [
-        #grid(columns: (1fr, 4fr),
+        #dated_li(
           [#pos.date],
           [#pos.type. _#pos.course _ (#pos.level). #pos.place.]
         )
