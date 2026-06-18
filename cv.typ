@@ -1,5 +1,17 @@
 #import "@preview/fontawesome:0.6.1": *
 
+#let dated_li(date, body) = [
+    #grid(columns: (1.2fr, 4fr),
+        [
+            #set text(size: 10.5pt, fill: black.lighten(20%))
+            #date
+        ],
+        [   
+            #body
+        ]
+    )
+]
+
 #let bib_info_cv(bibitem) = [
     #let date = bibitem.date
     #let title = bibitem.title
@@ -22,14 +34,14 @@
     } else {
         tail = bibitem.extra
     }
-    #grid(columns: (1fr, 4fr),
+    #dated_li(
       [#date],
       [#title. #tail]
     )
 ]
 
 #let talk_info_cv(item) = [
-    #grid(columns: (1fr, 4fr),
+    #dated_li(
       [
         #let date = ""
         #if item.at("date", default: "") != "" {date = [, #item.date]}
@@ -43,6 +55,8 @@
       ]
     )
 ]
+
+
 
 #let build_cv() = [
   #document("cv.pdf")[
@@ -96,7 +110,7 @@
 
     #stack(
       for degree in yaml("_data/education.yml").degrees [
-        #grid(columns: (1fr, 4fr), 
+        #dated_li( 
           grid.cell()[#degree.dates],
           grid.cell()[
             #degree.description. #degree.place.
@@ -121,7 +135,7 @@
 
     #stack(
       for scholarship in yaml("_data/scholarships.yml") [
-        #grid(columns: (1fr, 4fr),
+        #dated_li(
           [#scholarship.dates],
           [#scholarship.name. #scholarship.institution.],
         )
@@ -132,7 +146,7 @@
 
     #stack(
       for book in yaml("_data/books.yml") [
-        #grid(columns: (1fr, 4fr),
+        #dated_li(
           [#book.date],
           [
             #let extra = ""
@@ -147,7 +161,7 @@
             #if book.at("url", default: "") != "" {
               url = [ #link(book.url)[#book.url].]
             }
-            _#book.title _.#extra#isbn#url
+            _#{book.title}_.#extra#isbn#url
           ],
         )
       ]
@@ -176,7 +190,7 @@
     #stack(
       for event in others {
         if event.type == "event" [
-          #grid(columns: (1fr, 4fr),
+          #dated_li(
             [#event.date],
             [
 
@@ -195,7 +209,7 @@
     #stack(
       for event in others {
         if event.type == "online" [
-          #grid(columns: (1fr, 4fr),
+          #dated_li(
             [#event.date],
             [
 
@@ -214,7 +228,7 @@
     #stack(
       for event in others {
         if event.type == "edition" [
-          #grid(columns: (1fr, 4fr),
+          #dated_li(
             [#event.date],
             [
 
@@ -232,7 +246,7 @@
 
     #stack(
       for pos in yaml("_data/teaching.yml") [
-        #grid(columns: (1fr, 4fr),
+        #dated_li(
           [#pos.date],
           [#pos.type. _#pos.course _ (#pos.level). #pos.place.]
         )
