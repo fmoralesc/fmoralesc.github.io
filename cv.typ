@@ -278,7 +278,7 @@
     #show title: it => [
       #set text(font: "Jost*", weight: "regular")
       #align(center)[#it]
-      #v(2em)
+      #v(0.5em)
     ]
 
     #show heading: it => {
@@ -292,7 +292,15 @@
 
     #show list: set block(inset: (left: 1em))
 
+    #align(center)[
+        CURRICULUM VITAE
+    ]
+
     #title[Felipe Morales Carbonell]
+
+    #align(center)[
+        RUT: 16.303.890-0
+    ]
 
     = Contacto
 
@@ -303,6 +311,8 @@
     ]
 
     #fa-icon("envelope") #link("mailto:" + personalia.email)
+
+    #fa-icon("phone") #link("tel:+56948491502")[+56-9-48491502]
 
     = Biografía
 
