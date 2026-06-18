@@ -1,5 +1,5 @@
 #import "template.typ": dated-li, default_template
-#import "cv.typ": build_cv
+#import "cv.typ": build_cv, build_cv_simple
 #import "bib.typ": bib_info_cv, bib_info_research, talk_info_cv
 
 #default_template("index", [Home])[
@@ -360,6 +360,8 @@
 ]
 
 #build_cv()
+
+#build_cv_simple()
 
 #default_template("libro-como", [¿Cómo?])[
 

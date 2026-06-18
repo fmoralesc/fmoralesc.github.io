@@ -265,3 +265,128 @@
 
   ] <cv-pdf>
 ]
+
+
+#let build_cv_simple() = [
+  #document("cv-simple.pdf")[
+    #set page(paper: "a4", margin: 2.5cm, numbering: "1")
+    #set text(font: "Adobe Caslon Pro", lang: "en")
+    #set par(justify: true)
+
+    #show link: set text(fill: blue.darken(30%))
+
+    #show title: it => [
+      #set text(font: "Jost*", weight: "regular")
+      #align(center)[#it]
+      #v(2em)
+    ]
+
+    #show heading: it => {
+      set text(font: "Jost*")
+      if it.level == 1 [
+        #set text(weight: "regular", size: 16pt)
+        #it
+        #v(0.5em)
+      ]
+    }
+
+    #show list: set block(inset: (left: 1em))
+
+    #title[Felipe Morales Carbonell]
+
+    = Contacto
+
+    #let personalia = yaml("_data/personalia.yml")
+
+    #for line in personalia.address [
+      #line.replace("</br>", "\n")
+    ]
+
+    #fa-icon("envelope") #link("mailto:" + personalia.email)
+
+    = Biografía
+
+    #personalia.bio_es
+
+    = Educación
+
+    #stack(
+      for degree in yaml("_data/education.yml").degrees [
+        #grid(columns: (1fr, 4fr), 
+          grid.cell()[#degree.dates],
+          grid.cell()[
+            #degree.description.replace(
+                            "Master in Philosophy, with specialization in Epistemology",
+                            "Magíster en Filosofía"
+                        ).replace(
+                            "Bachelor in Philosophy",
+                            "Licenciatura en Filosofía"
+                        ). #degree.place.
+          ]
+        )
+      ]
+    )
+
+    = Becas
+
+    #stack(
+      for scholarship in yaml("_data/scholarships.yml") [
+        #grid(columns: (1fr, 4fr),
+          [#scholarship.dates],
+          [#scholarship.name. #scholarship.institution.],
+        )
+      ]
+    )
+    
+    = Publicaciones y charlas
+
+    Para detalles sobre mi carrera académica, véase mi currículum académico
+        #link("https://fmoralesc.github.io/cv.pdf")
+
+    #let others = yaml("_data/others.yml")
+
+    = Organización de eventos
+
+    #stack(
+      for event in others {
+        if event.type == "event" [
+          #grid(columns: (1fr, 4fr),
+            [#event.date.replace(", November 5", "").replace(", April 12", "")],
+            [
+
+              #let url = ""
+              #if event.at("url", default: "") != "" {
+                url = [. #link(event.url)[#event.url]]
+              }
+              _#{event.title}_.],
+          )
+        ]
+      }
+    )
+
+    = Enseñanza
+
+    #stack(
+      for pos in yaml("_data/teaching.yml") [
+        #grid(columns: (1fr, 4fr),
+          [#pos.date],
+          [#pos.type. _#pos.course _ (#pos.level). #pos.place.]
+        )
+      ]
+    )
+
+    = Habilidades
+
+    #for service in personalia.skills [
+        #list.item[
+        #service.name.replace("Programming",
+                    "Programación").replace("Typesetting", "Diagramación"):
+        #for val in service.values [
+          #list.item[#val]
+        ]
+        ]
+        #v(0.2em)
+      ]
+
+  ] <cv-pdf-simple>
+]
