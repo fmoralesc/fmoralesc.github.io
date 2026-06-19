@@ -217,7 +217,7 @@
               #if event.at("url", default: "") != "" {
                 url = [. #link(event.url)[#event.url]]
               }
-              #event.title. _#event.extra _#url.],
+              #event.title. _#{event.extra}_#url.],
           )
         ]
       }
