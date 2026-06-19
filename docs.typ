@@ -292,7 +292,7 @@
                 url = [.
                   #link(item.url)[#item.url]]
               }
-              #item.title. _#item.extra _#url.],
+              #item.title. _#{item.extra}_#url.],
           )
         ]
       }
