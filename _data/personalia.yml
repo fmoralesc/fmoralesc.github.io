@@ -29,6 +29,7 @@ service:
       - Sociedad Latinoamericana Peirce
       - SoChiFiC (Sociedad Chilena de Filosofía de la Ciencia)
       - AChiF (Asociación Chilena de Filosofía)
+      - ALFE (Asociación Latinoamericana de Filosofía de la Educación)
   - kind: Editor of
     values:
       - Homónima, Revista de Filosofía
