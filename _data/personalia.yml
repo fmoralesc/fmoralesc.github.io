@@ -26,9 +26,10 @@ service:
   - kind: Member of
     values:
       - AChEFA (Asociación Chilena de Estudiantes de Filosofía)
-      - Sociedad Latinoamericana Peirce
+      - SLaP (Sociedad Latinoamericana Peirce)
       - SoChiFiC (Sociedad Chilena de Filosofía de la Ciencia)
       - AChiF (Asociación Chilena de Filosofía)
+      - ALFAn (Asociación Latinoamericana de Filosofía Analítica)
       - ALFE (Asociación Latinoamericana de Filosofía de la Educación)
   - kind: Editor of
     values:
