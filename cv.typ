@@ -282,6 +282,7 @@
 
     = Skills
 
+    #columns(2)[
     #for service in personalia.skills [
         #list.item[
         #service.name:
@@ -289,8 +290,9 @@
           #list.item[#val]
         ]
         ]
-        #v(0.2em)
+        #colbreak()
       ]
+    ]
 
   ] <cv-pdf>
 ]
@@ -646,73 +648,8 @@
       ]
     )
 
-    // = Talks
-    //
-    // #stack(
-    //   for article in yaml("_data/talks.yml") [
-    //     #talk_info_cv(article)
-    //   ]
-    // )
-
     #let others = yaml("_data/others.yml")
 
-    // = Organized events
-    //
-    // #stack(
-    //   for event in others {
-    //     if event.type == "event" [
-    //       #dated_li(
-    //         [#event.date],
-    //         [
-    //
-    //           #let url = ""
-    //           #if event.at("url", default: "") != "" {
-    //             url = [. #link(event.url)[#event.url]]
-    //           }
-    //           _#event.title _. #event.venue#url.],
-    //       )
-    //     ]
-    //   }
-    // )
-
-    // = Others
-    //
-    // #stack(
-    //   for event in others {
-    //     if event.type == "online" [
-    //       #dated_li(
-    //         [#event.date],
-    //         [
-    //
-    //           #let url = ""
-    //           #if event.at("url", default: "") != "" {
-    //             url = [. #link(event.url)[#event.url]]
-    //           }
-    //           #event.title. _#{event.extra}_#url.],
-    //       )
-    //     ]
-    //   }
-    // )
-    //
-    // = Editing/translation
-    //
-    // #stack(
-    //   for event in others {
-    //     if event.type == "edition" [
-    //       #dated_li(
-    //         [#event.date],
-    //         [
-    //
-    //           #let url = ""
-    //           #if event.at("url", default: "") != "" {
-    //             url = [. #link(event.url)[#event.url]]
-    //           }
-    //           _#event.title _. #event.extra#url.],
-    //       )
-    //     ]
-    //   }
-    // )
-    //
     = Teaching
 
     #stack(
@@ -723,30 +660,6 @@
         )
       ]
     )
-
-    // = Service and community
-    //
-    // #for service in personalia.service [
-    //     #list.item[
-    //     #service.kind:
-    //     #for val in service.values [
-    //       #list.item[#val]
-    //     ]
-    //     ]
-    //     #v(0.2em)
-    //   ]
-    //
-    // = Skills
-    //
-    // #for service in personalia.skills [
-    //     #list.item[
-    //     #service.name:
-    //     #for val in service.values [
-    //       #list.item[#val]
-    //     ]
-    //     ]
-    //     #v(0.2em)
-    //   ]
 
   ] <cv-short-pdf>
 ]
