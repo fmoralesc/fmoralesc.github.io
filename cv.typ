@@ -12,8 +12,13 @@
     )
 ]
 
-#let bib_info_cv(bibitem) = [
+#let bib_info_cv(bibitem, lang: none) = [
     #let date = bibitem.date
+
+    #if lang == "es" and type(date) == str {
+      date = date.replace("forthcoming", "próximo")
+    }
+
     #let title = bibitem.title
     #let tail = ""
     // (#bibitem.date). #bibitem.title.
@@ -27,7 +32,9 @@
         if bibitem.at("volume", default: "") != "" { vol = [ #bibitem.volume]} else {let vol = ""}
         if bibitem.at("number", default: "") != "" { num = [(#bibitem.number)]} else {let num = ""}
         if bibitem.at("pages", default: "") != "" { pages = [, #bibitem.pages]} else {let pages = ""}
-        if bibitem.at("coauthor", default: "") != "" { coauthor = [. (With #bibitem.coauthor)]} else {let coauthor = ""}
+        let with = "With"
+        if lang == "es" { with = "Con" } 
+        if bibitem.at("coauthor", default: "") != "" { coauthor = [. (#with #bibitem.coauthor)]} else {let coauthor = ""}
         if bibitem.at("extra", default: "") != "" { extra = [. #bibitem.extra]} else {let extra = ""}
         if bibitem.at("url", default: "") != "" { url = [. #link(bibitem.url)[#bibitem.url]]} else {let url = ""}
         tail = [_#bibitem.journal _#vol#num#pages#coauthor#extra#url.]
@@ -40,11 +47,19 @@
     )
 ]
 
-#let talk_info_cv(item) = [
+#let talk_info_cv(item, lang: none) = [
     #dated_li(
       [
         #let date = ""
-        #if item.at("date", default: "") != "" {date = [, #item.date]}
+        #if lang == "es" {
+          if item.at("date_es", default: "") != "" {
+            date = [, #item.date_es]
+          }
+        } else {
+          if item.at("date", default: "") != "" {
+            date = [, #item.date]
+          }
+        }
         #item.year#date
       ],
       [
@@ -278,6 +293,237 @@
       ]
 
   ] <cv-pdf>
+]
+
+
+#let build_cv_es() = [
+  #document("cv-es.pdf")[
+    #set page(paper: "a4", margin: 2.5cm, numbering: "1")
+    #set text(font: "Adobe Caslon Pro", lang: "es")
+    #set par(justify: true)
+
+    #show title: it => [
+      #set text(font: "Jost*", weight: "regular")
+      #align(center)[#it]
+      #v(2em)
+    ]
+
+    #show heading: it => {
+      set text(font: "Jost*")
+      if it.level == 1 [
+        #set text(weight: "regular", size: 16pt)
+        #it
+        #v(0.5em)
+      ]
+    }
+
+    #show list: set block(inset: (left: 1em))
+
+    #title[Felipe Morales Carbonell]
+
+    = Datos de contacto
+
+    #let personalia = yaml("_data/personalia.yml")
+
+    #for line in personalia.address [
+      #line.replace("</br>", "\n")
+    ]
+
+    #fa-icon("envelope") #link("mailto:" + personalia.email)
+
+    #fa-icon("orcid") #link(personalia.orcid)
+
+
+    = Biografía breve
+
+    #personalia.bio_es
+
+    _Area de Especialización_: #personalia.aos_es.
+
+    _Areas de Competencia_: #personalia.aoc_es.join(", ", last: ", y ")
+
+    _Areas de Interés_: #personalia.aoi_es.join(", ", last: ", y ")
+
+    = Educación
+
+    #stack(
+      for degree in yaml("_data/education.yml").degrees [
+        #dated_li( 
+          grid.cell()[#degree.dates],
+          grid.cell()[
+            #degree.description.replace(
+                            "Master in Philosophy, with specialization in Epistemology",
+                            "Magíster en Filosofía"
+                        ).replace(
+                            "Bachelor in Philosophy",
+                            "Licenciatura en Filosofía"
+                        ). #degree.place.
+
+            #if degree.at("project", default: "") != "" [
+              Project: _#degree.project._
+            ]
+
+            Tesis: _#degree.thesis._
+
+            Supervisor: #degree.supervisor.
+
+            // #if degree.at("extra", default: "") != "" [
+            //     #degree.extra.
+            // ]
+          ]
+        )
+      ]
+    )
+
+    = Becas
+
+    #stack(
+      for scholarship in yaml("_data/scholarships.yml") [
+        #dated_li(
+          [#scholarship.dates],
+          [#scholarship.name. #scholarship.institution.],
+        )
+      ]
+    )
+    
+    = Libros
+
+    #stack(
+      for book in yaml("_data/books.yml") [
+        #dated_li(
+          [#book.date],
+          [
+            #let extra = ""
+            #let isbn = ""
+            #let url = ""
+            #if book.at("extra", default: "") != "" {
+              extra = [ #book.extra.]
+            }
+            #if book.at("isbn", default: "") != "" {
+              isbn = [ ISBN: #book.isbn.]
+            }
+            #if book.at("url", default: "") != "" {
+              url = [ #link(book.url)[#book.url].]
+            }
+            _#{book.title}_.#extra#isbn#url
+          ],
+        )
+      ]
+    )
+
+    = Artículos
+
+    #stack(
+      for article in yaml("_data/articles.yml") [
+        #bib_info_cv(article, lang: "es")
+      ]
+    )
+
+    = Charlas y presentaciones
+
+    #stack(
+      for article in yaml("_data/talks.yml") [
+        #talk_info_cv(article, lang: "es")
+      ]
+    )
+
+    #let others = yaml("_data/others.yml")
+
+    = Eventos organizados
+
+    #stack(
+      for event in others {
+        if event.type == "event" [
+          #dated_li(
+            [#event.date.replace("November", "Noviembre").replace("April", "Abril")],
+            [
+
+              #let url = ""
+              #if event.at("url", default: "") != "" {
+                url = [. #link(event.url)[#event.url]]
+              }
+              _#event.title _. #event.venue#url.],
+          )
+        ]
+      }
+    )
+
+    = Otros
+    
+    #stack(
+      for event in others {
+        if event.type == "online" [
+          #dated_li(
+            [#event.date],
+            [
+
+              #let url = ""
+              #if event.at("url", default: "") != "" {
+                url = [. #link(event.url)[#event.url]]
+              }
+              #event.title. _#{event.extra}_#url.],
+          )
+        ]
+      }
+    )
+
+    = Edición/traducción
+    
+    #stack(
+      for event in others {
+        if event.type == "edition" [
+          #dated_li(
+            [#event.date],
+            [
+
+              #let url = ""
+              #if event.at("url", default: "") != "" {
+                url = [. #link(event.url)[#event.url]]
+              }
+              _#event.title _. #event.extra#url.],
+          )
+        ]
+      }
+    )
+
+    = Enseñanza
+
+    #stack(
+      for pos in yaml("_data/teaching.yml") [
+        #dated_li(
+          [#pos.date],
+          [#pos.type. _#pos.course _ (#pos.level). #pos.place.]
+        )
+      ]
+    )
+
+    = Servicio y comunidad
+    
+    #for service in personalia.service [
+        #list.item[
+        #service.kind_es:
+        #for val in service.values [
+          #list.item[#val]
+        ]
+        ]
+        #v(0.2em)
+      ]
+
+    = Habilidades
+
+    #columns(2)[
+    #for service in personalia.skills [
+        #list.item[
+        #service.name:
+        #for val in service.values [
+          #list.item[#val]
+        ]
+        ]
+        #colbreak()
+      ]
+    ]
+
+  ] <cv-pdf-es>
 ]
 
 

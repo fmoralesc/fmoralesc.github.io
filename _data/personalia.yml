@@ -24,6 +24,7 @@ skills:
       - Typst
 service:
   - kind: Member of
+    kind_es: Miembro de
     values:
       - AChEFA (Asociación Chilena de Estudiantes de Filosofía)
       - SLaP (Sociedad Latinoamericana Peirce)
@@ -32,9 +33,11 @@ service:
       - ALFAn (Asociación Latinoamericana de Filosofía Analítica)
       - ALFE (Asociación Latinoamericana de Filosofía de la Educación)
   - kind: Editor of
+    kind_es: Editor de
     values:
       - Homónima, Revista de Filosofía
   - kind: Reviewer for
+    kind_es: Revisor para
     values:
       - Synthese
       - Philosophia
