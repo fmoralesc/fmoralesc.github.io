@@ -297,6 +297,114 @@
   ] <cv-pdf>
 ]
 
+#let build_publication_list_es() = [
+  #document("pub-list-es.pdf")[
+    #set page(paper: "a4", margin: 2.5cm, numbering: "1")
+    #set text(font: "Adobe Caslon Pro", lang: "es")
+    #set par(justify: true)
+
+    #show title: it => [
+      #set text(font: "Jost*", weight: "regular")
+      #align(center)[#it]
+      #v(2em)
+    ]
+
+    #show heading: it => {
+      set text(font: "Jost*")
+      if it.level == 1 [
+        #set text(weight: "regular", size: 16pt)
+        #it
+        #v(0.5em)
+      ]
+    }
+
+    #show list: set block(inset: (left: 1em))
+
+  #title[Felipe Morales Carbonell
+
+      #text(size: 18pt)[Lista de publicaciones]]
+
+
+
+    = Libros
+
+    #stack(
+      for book in yaml("_data/books.yml") [
+        #dated_li(
+          [#book.date],
+          [
+            #let extra = ""
+            #let isbn = ""
+            #let url = ""
+            #if book.at("extra", default: "") != "" {
+              extra = [ #book.extra.]
+            }
+            #if book.at("isbn", default: "") != "" {
+              isbn = [ ISBN: #book.isbn.]
+            }
+            #if book.at("url", default: "") != "" {
+              url = [ #link(book.url)[#book.url].]
+            }
+            _#{book.title}_.#extra#isbn#url
+          ],
+        )
+      ]
+    )
+
+    = Artículos
+
+    #stack(
+      for article in yaml("_data/articles.yml") [
+        #bib_info_cv(article, lang: "es")
+      ]
+    )
+
+
+    #let others = yaml("_data/others.yml")
+
+    = Publicaciones misceléneas (sin revisión de pares)
+    
+    #stack(
+      for event in others {
+        if event.type == "online" [
+          #dated_li(
+            [#event.date],
+            [
+
+              #let url = ""
+              #if event.at("url", default: "") != "" {
+                url = [. #link(event.url)[#event.url]]
+              }
+              #event.title. _#{event.extra}_#url.],
+          )
+        ]
+      }
+    )
+
+    = Edición/traducción
+    
+    #stack(
+      for event in others {
+        if event.type == "edition" [
+          #dated_li(
+            [#event.date],
+            [
+
+              #let url = ""
+              #if event.at("url", default: "") != "" {
+                url = [. #link(event.url)[#event.url]]
+              }
+              _#event.title _. #event.extra#url.],
+          )
+        ]
+      }
+    )
+
+
+
+  ] <pub-list-es>
+]
+
 
 #let build_cv_es() = [
   #document("cv-es.pdf")[
