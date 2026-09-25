@@ -99,7 +99,10 @@
   number: 1
   pages: 89-108
   coauthor: 'Cristina Villegas'
+  abstract: >
+    The use of dispositions has been put into question many times in the philosophical literature, especially with regards to how dispositional attributions can be justified. Yet, dispositions are an important part not only of our everyday talk but also of our scientific practices. In this paper, we develop an argument that infers the epistemic justification of dispositional talk from its indispensability for carrying out basic epistemological projects, and we apply it to the use of dispositions in evolutionary biology. For doing this, we first advocate for a function-based strategy for the epistemic justification of dispositional attributions. We next review the functional role of some key dispositional notions in evolutionary biology, such as fitness and evolvability. Then, we show that alternative non-dispositional substitutes of these dispositions fail to fulfill their roles to the same degree. We conclude that the use of dispositions is justified in evolutionary biology.
   url: 'https://ojs.ehu.eus/index.php/THEORIA/article/view/25137'
+  selected: true
 - title: '¿Es cartesiano el “teatro cartesiano” de Dennett?: Un análisis crítico desde el trialismo y el ens per se'
   date: 2024
   journal: Anales del Seminario de Historia de la Filosofía
@@ -125,6 +128,7 @@
     Stephenson (2022) has argued that Kant’s thesis that all transcendental truths are transcendentally a priori knowable leads to omniscience of all transcendental truths. His arguments depend on luminosity principles and closure principles for transcendental knowability. We will argue that one pair of a luminosity and a closure principle should not be used, because the closure principle is too strong, while the other pair of a luminosity and a closure principle should not be used, because the luminosity principle is too strong. Stephenson’s argument also depends on a factivity principle for transcendental knowability, which we will argue to be false.
   url: https://www.mentis.de/view/journals/hpla/aop/article-10.30965-26664275-bja10073/article-10.30965-26664275-bja10073.xml
   local: transcendental-knowability.pdf
+  selected: true
 - title: 'Reseña: J. Adam Carter. Autonomous Knowledge: Radical Enhancement, Autonomy & The Future of Knowing. Oxford: Oxford UP, 2022, 159 pp. '
   date: 2023
   abstract: >
