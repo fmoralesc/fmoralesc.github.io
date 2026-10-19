@@ -41,6 +41,7 @@ service:
     values:
       - Synthese
       - Philosophia
+      - Philosophical Psychology
       - Sophia
       - Journal of Value Inquiry
       - Logique et Analyse
