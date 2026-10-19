@@ -15421,7 +15421,7 @@ endobj
 
 1140 0 obj
 <<
-  /Length 30720
+  /Length 30530
 >>
 stream
 /Span <<
@@ -15767,7 +15767,7 @@ BT
 0 Tr
 /f1 9.9 Tf
 1 0 0 -1 0 0 Tm
-[(\000!) -5 (\000\027\000\016) -13 (\000\026\000 \000"\000\027) 5 (\000\f\000\t\000\035\000\036)] TJ
+[(\000\)\000&\000\)\000\021)] TJ
 ET
 Q
 EMC
@@ -15842,7 +15842,7 @@ EMC
 0 Tr
 /f2 11 Tf
 1 0 0 -1 17.842 0 Tm
-[(\000 ) 20 (\000\006) 5 (\000\f\000'\000\016\000\013\000\n) -5 (\000\004\000\020\000\005) 35.973114 (\000\021\000\006\000\017\000\016) 15 (\000\003\000\022\000\t) 10 (\000\006\000\002) 20 (\000%\000\017\000\003\000\004\000\020\000\037) 30 (\000\005) 35.973114 (\000/\000\003) -20 (\0000\000\003) -5 (\0001\000\013\000\006\000\017\000\003\000\020\000\005) 35.973114 (\000\027\000\005) 35.973114 (\0002\000\003) -5 (\000!) 5 (\000\004\000\016) 15 (\000\003\000\020\000\005) 35.973114 (\000\t) 5 (\000\004\000\002) 20 (\000\004\000\005) 35.973114 (\000\003) 5 (\000\f\000\005) 35.973114 (\000\b\000\013\000\026\000\f\000\006\000\005) 35.973114 (\0003) 40 (\0003\000\023\000\005)] TJ
+[(\000 ) 20 (\000\006) 5 (\000\f\000'\000\016\000\013\000\n) -5 (\000\004\000\020\000\005\000\021\000\006\000\017\000\016) 15 (\000\003\000\022\000\t) 10 (\000\006\000\002) 20 (\000%\000\017\000\003\000\004\000\020\000\037) 30 (\000\005\000/\000\003) -20 (\0000\000\003) -5 (\0001\000\013\000\006\000\017\000\003\000\020\000\005\000\027\000\005\0002\000\003) -5 (\000!) 5 (\000\004\000\016) 15 (\000\003\000\020\000\005\000\t) 5 (\000\004\000\002) 20 (\000\004\000\005\000\003) 5 (\000\f\000\005\000\b\000\013\000\026\000\f\000\006\000\005\0003) 40 (\0003\000\023\000\005)] TJ
 ET
 Q
 EMC
@@ -15850,14 +15850,14 @@ EMC
   /MCID 27
 >> BDC
 q
-1 0 0 -1 466.58163 473.1185 cm
+1 0 0 -1 470.14297 473.1185 cm
 /c0 cs
 0 scn
 BT
 0 Tr
 /f1 11 Tf
 1 0 0 -1 0 0 Tm
-[(\000\023) 70.000015 (\000\007) 39.726852 (\000\017\000&\000\017\000\020\000'\000'\000\017\000&\000\(\000\021\000\030)] TJ
+[(\000\023) 70.000015 (\000\007\000\017\000&\000\017\000\020\000'\000\017\000&\000\(\000\021\000\030)] TJ
 ET
 Q
 EMC
@@ -26337,8 +26337,8 @@ endobj
 1149 0 obj
 <<
   /Creator (Typst 0.15.1)
-  /ModDate (D:20261019090437-03'00)
-  /CreationDate (D:20261019090437-03'00)
+  /ModDate (D:20261019090708-03'00)
+  /CreationDate (D:20261019090708-03'00)
 >>
 endobj
 
@@ -26349,7 +26349,7 @@ endobj
   /Subtype /XML
 >>
 stream
-<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="xmp-writer"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/"  xmlns:xmp="http://ns.adobe.com/xap/1.0/"  xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"  xmlns:xmpTPg="http://ns.adobe.com/xap/1.0/t/pg/"  xmlns:pdf="http://ns.adobe.com/pdf/1.3/" ><xmp:CreatorTool>Typst 0.15.1</xmp:CreatorTool><dc:language><rdf:Bag><rdf:li>en</rdf:li></rdf:Bag></dc:language><xmp:ModifyDate>2026-10-19T09:04:37-03:00</xmp:ModifyDate><xmp:CreateDate>2026-10-19T09:04:37-03:00</xmp:CreateDate><xmpTPg:NPages>9</xmpTPg:NPages><dc:format>application/pdf</dc:format><xmpMM:InstanceID>491Iptn0zT8o+hc498b9rg==</xmpMM:InstanceID><xmpMM:DocumentID>491Iptn0zT8o+hc498b9rg==</xmpMM:DocumentID><xmpMM:RenditionClass>proof</xmpMM:RenditionClass><pdf:PDFVersion>1.7</pdf:PDFVersion></rdf:Description></rdf:RDF></x:xmpmeta><?xpacket end="r"?>
+<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="xmp-writer"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/"  xmlns:xmp="http://ns.adobe.com/xap/1.0/"  xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"  xmlns:xmpTPg="http://ns.adobe.com/xap/1.0/t/pg/"  xmlns:pdf="http://ns.adobe.com/pdf/1.3/" ><xmp:CreatorTool>Typst 0.15.1</xmp:CreatorTool><dc:language><rdf:Bag><rdf:li>en</rdf:li></rdf:Bag></dc:language><xmp:ModifyDate>2026-10-19T09:07:08-03:00</xmp:ModifyDate><xmp:CreateDate>2026-10-19T09:07:08-03:00</xmp:CreateDate><xmpTPg:NPages>9</xmpTPg:NPages><dc:format>application/pdf</dc:format><xmpMM:InstanceID>+yhl5u4jx6yGa0yj5+GdkQ==</xmpMM:InstanceID><xmpMM:DocumentID>+yhl5u4jx6yGa0yj5+GdkQ==</xmpMM:DocumentID><xmpMM:RenditionClass>proof</xmpMM:RenditionClass><pdf:PDFVersion>1.7</pdf:PDFVersion></rdf:Description></rdf:RDF></x:xmpmeta><?xpacket end="r"?>
 endstream
 endobj
 
@@ -27515,24 +27515,24 @@ xref
 0000223240 00000 n
 0000224061 00000 n
 0000242986 00000 n
-0000273765 00000 n
-0000313236 00000 n
-0000350788 00000 n
-0000385586 00000 n
-0000423236 00000 n
-0000457487 00000 n
-0000479678 00000 n
-0000482635 00000 n
-0000483278 00000 n
-0000483406 00000 n
-0000484493 00000 n
+0000273575 00000 n
+0000313046 00000 n
+0000350598 00000 n
+0000385396 00000 n
+0000423046 00000 n
+0000457297 00000 n
+0000479488 00000 n
+0000482445 00000 n
+0000483088 00000 n
+0000483216 00000 n
+0000484303 00000 n
 trailer
 <<
   /Size 1152
   /Root 1151 0 R
   /Info 1149 0 R
-  /ID [(491Iptn0zT8o+hc498b9rg==) (491Iptn0zT8o+hc498b9rg==)]
+  /ID [(+yhl5u4jx6yGa0yj5+GdkQ==) (+yhl5u4jx6yGa0yj5+GdkQ==)]
 >>
 startxref
-484755
+484565
 %%EOF
