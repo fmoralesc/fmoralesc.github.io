@@ -1,8 +1,15 @@
+- title: Theories, models, subject matters and questions
+  year: 2026
+  date: 'Novemver 3'
+  venue: 'XIV Encuentro de la Asociación de Filosofía e Historia de la Ciencia del Cono Sur (AFHIC)'
+  location: 'Valparaiso, Chile'
+  selected: true
 - title: 'Revisiting acoustic inference'
   year: 2026
   date: 'October 16'
   venue: 'XXVI Jornadas Rolando Chuaqui Kettlun'
   location: 'Santiago, Chile'
+  selected: true
 - title: 'Knowing how to do similarly'
   year: 2026
   date: 'August 7'
@@ -15,6 +22,7 @@
   date_es: 'Enero 16'
   venue: '1st SOCHIFIC Conference'
   location: 'Valparaiso, Chile'
+  selected: true
 - title: 'Institutions you can trust'
   year: 2026
   date: 'January 8'
